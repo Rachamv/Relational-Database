@@ -8,6 +8,13 @@ Next, how to create and use a relational database with PostgreSQL, a database ma
 
 Finally, learn Git, the version control system, an essential tool of every developer.
 
+Learn Bash by Building a Boilerplate
+The terminal allows you to send text commands to your computer that can manipulate the file system, run programs, automate tasks, and much more.
+
+In this 170-lesson course, you will learn terminal commands by creating a website boilerplate using only the command line.
+
+Build a Boilerplate --- Done
+
 * course from freecodecamp
 
 
