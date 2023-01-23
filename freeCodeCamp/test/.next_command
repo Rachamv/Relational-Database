@@ -1,0 +1,37 @@
+pwd
+echo $PWD >> ~/project/freeCodeCamp/test/.cwd
+history -a
+echo goodbye
+echo $PWD >> ~/project/freeCodeCamp/test/.cwd
+history -a
+echo Goodbye
+echo $PWD >> ~/project/freeCodeCamp/test/.cwd
+history -a
+echo goodbye
+echo $PWD >> ~/project/freeCodeCamp/test/.cwd
+history -a
+echo goodbye terminal
+echo $PWD >> ~/project/freeCodeCamp/test/.cwd
+history -a
+exit
+echo $PWD >> ~/project/freeCodeCamp/test/.cwd
+history -a
+cd ..
+echo $PWD >> ~/project/freeCodeCamp/test/.cwd
+history -a
+git clone https://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@github.comRachamv/Relational-Database.git
+echo $PWD >> ~/project/freeCodeCamp/test/.cwd
+history -a
+git clone https://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@github.com/Rachamv/Relational-Database.git
+echo $PWD >> ~/project/freeCodeCamp/test/.cwd
+history -a
+ls --color=auto
+echo $PWD >> ~/project/freeCodeCamp/test/.cwd
+history -a
+cp project Relational-Database/
+echo $PWD >> ~/project/freeCodeCamp/test/.cwd
+history -a
+cp --help
+echo $PWD >> ~/project/freeCodeCamp/test/.cwd
+history -a
+cp -r project/ Relational-Database/
