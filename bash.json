@@ -1,0 +1,4641 @@
+{
+  "id": "freeCodeCamp/learn-bash-by-building-a-boilerplate:v1.0.0",
+  "version": "1.0.4",
+  "summary": {
+    "title": "Learn Bash by Building a Boilerplate",
+    "description": "> Welcome to the Introduction to Bash lessons. I know it's scary, but you can do this!"
+  },
+  "config": {
+    "setup": {
+      "commands": [
+        "./freeCodeCamp/setup.sh",
+        "cd freeCodeCamp && npm install"
+      ],
+      "commits": [
+        "59ba5539df2c244e0c916b2ee2e0eae7019e45a2"
+      ]
+    },
+    "testRunner": {
+      "command": "npm run programmatic-test",
+      "args": {
+        "tap": "--reporter=mocha-tap-reporter"
+      },
+      "directory": "freeCodeCamp"
+    },
+    "repo": {
+      "uri": "https://github.com/freeCodeCamp/learn-bash-by-building-a-boilerplate",
+      "branch": "v1.0.4"
+    },
+    "continue": {
+      "commands": [
+        "./freeCodeCamp/setup.sh",
+        "./freeCodeCamp/reset.sh"
+      ]
+    },
+    "reset": {
+      "commands": [
+        "./freeCodeCamp/setup.sh",
+        "./freeCodeCamp/reset.sh"
+      ]
+    },
+    "dependencies": [
+      {
+        "name": "node",
+        "version": ">=10"
+      }
+    ],
+    "webhook": {
+      "url": "https://api.freecodecamp.org/coderoad-challenge-completed",
+      "events": {
+        "init": false,
+        "reset": false,
+        "step_complete": false,
+        "level_complete": false,
+        "tutorial_complete": true
+      }
+    }
+  },
+  "levels": [
+    {
+      "id": "5",
+      "title": "Restart Terminal",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "5.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "f7ce5034ba67755d70eabc1239bbf87d9980cb42"
+            ]
+          },
+          "content": "**The first thing you need to do is start the terminal.** Do that by clicking the \"hamburger\" menu at the top left of the screen, going to the \"terminal\" section, and clicking \"new terminal\". Once you open a new one, type `echo hello terminal` into the terminal and press enter.",
+          "hints": [
+            "Capitalization matters",
+            "If the tests don't run automatically, try typing `exit` into the terminal and redoing the instructions"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "10",
+      "title": "Print Working Directory",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "10.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "d256891c8b303ad8d971d66b13c30e0dfe5615be"
+            ]
+          },
+          "content": "What you see in the terminal below is a folder (or directory) on this machine. Type `pwd` into the terminal and press enter to see the path of the folder. `pwd` stands for \"print working directory\".",
+          "hints": [
+            "Type `pwd` into the terminal and press enter",
+            "Make sure you are in the `project` folder when you enter the command",
+            "Enter `cd ~/project` to get to the `project` folder if you aren't there"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "20",
+      "title": "List",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "20.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "6f99e86a037ba48df1076a41a6486ccf577addf3"
+            ]
+          },
+          "content": "The output tells you where the folder you are in is located. You are in the `project` folder, which is in the `CodeAlly` folder, which is in the `home` folder. Type `ls` into the terminal to see what's in this folder. `ls` stands for \"list\".",
+          "hints": [
+            "Type `ls` into the terminal and press enter",
+            "Make sure you are in the `project` folder when you enter the command",
+            "Enter `cd ~/project` to get to the `project` folder if you aren't there"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "30",
+      "title": "Change Directory",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "30.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "bb2a33287c903df1c0be1e5a14fcdf2b724a6786"
+            ]
+          },
+          "content": "The output is showing everything in this folder. There's two folders here. You can use `cd <folder_name>` to go into a folder. `cd` stands for \"change directory\". Change to the `freeCodeCamp` directory.",
+          "hints": [
+            "Capitalization matters",
+            "Type `cd freeCodeCamp` into the terminal and press enter",
+            "Make sure you start in the `project` folder first",
+            "Enter `cd ~/project` to get to the `project` folder if you aren't there"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "40",
+      "title": "Print Working Directory",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "40.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "3e0ed1c733c6f888d19ba4313b10b41053f6cc6e"
+            ]
+          },
+          "content": "You are in the `freecodecamp` folder now. You may have noticed that the prompt changed to include it. Print the working directory of the `freeCodeCamp` folder to see the full path of where you are.",
+          "hints": [
+            "Use the \"print working directory\" command",
+            "Type `pwd` into the terminal and press enter",
+            "Make sure you are in the `freeCodeCamp` folder first",
+            "Enter `cd ~/project/freeCodeCamp` to get to the `freeCodeCamp` folder if you aren't there"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "50",
+      "title": "List",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "50.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "1ea06817f21d6e2224c85e3fd424bc1ef3dbf69e"
+            ]
+          },
+          "content": "You can see the path of the `freeCodeCamp` folder. It's in the `project` folder you were just in. List the contents of the `freeCodeCamp` folder to see what's here.",
+          "hints": [
+            "Use the \"list\" command",
+            "Try typing `ls` into the terminal",
+            "Make sure you are in the `freeCodeCamp` folder first",
+            "Enter `cd ~/project/freeCodeCamp` to get to the `freeCodeCamp` folder if you aren't there"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "60",
+      "title": "Change Directory",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "60.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "708102664fc93c62a74e4b3c05c7d73159db2198"
+            ]
+          },
+          "content": "There's two folders and three files here. The folders are blue and the files include their extension. Next, change to that `test` directory.",
+          "hints": [
+            "Use the \"change directory\" command",
+            "Here's an example: `cd folder-name`",
+            "Try entering `cd test`",
+            "Make sure you enter the command from the `freeCodeCamp` folder",
+            "Enter `cd ~/project/freeCodeCamp` to get to the `freeCodeCamp` folder if you aren't there"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "70",
+      "title": "Print Working Directory",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "70.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "c66580fac7c23a7f51a3f6b7b0269bde89463ea8"
+            ]
+          },
+          "content": "You can see you are in the `test` folder now. It shows `test` in the prompt. Print the full path of this directory. Remember that \"folder\" and \"directory\" are the same thing.",
+          "hints": [
+            "Use the \"print working directory\" command",
+            "Type `pwd` into the terminal",
+            "Make sure you are in the `test` folder first",
+            "Enter `cd ~/project/freeCodeCamp/test` to get to the `test` folder if you aren't there"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "80",
+      "title": "List",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "80.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "dcc782ce9a0aec971d42f9f14bb01a69f8e2bf61"
+            ]
+          },
+          "content": "That's the path to the `test` folder, it's in the `freeCodeCamp` folder. **List** the contents of this folder.",
+          "hints": [
+            "Use the \"list\" command",
+            "Type `ls` into the terminal",
+            "Make sure you are in the `test` folder first",
+            "Enter `cd ~/project/freeCodeCamp/test` to get to the `test` folder if you aren't there"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "90",
+      "title": "Change Directory",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "90.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "fc534af300e1feecfccad859a6192fe9653a6adf"
+            ]
+          },
+          "content": "These are all files. There's no more folders to go into here. You can use `cd ..` to go back a folder level. The two dots will take you back one level. Go back to the `freeCodeCamp` folder.",
+          "hints": [
+            "Use the \"change directory\" command",
+            "Type `cd ..` into the terminal end press enter",
+            "Type the command from the `test` folder",
+            "Enter `cd ~/project/freeCodeCamp/test` to get to the `test` folder if you aren't there"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "100",
+      "title": "List",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "100.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "34c6880ace03a80c6d9fa0eaded5520952302871"
+            ]
+          },
+          "content": "`test` got removed from the prompt since you left that folder and you're back in the `freeCodeCamp` folder. List the contents of what's here to remind yourself.",
+          "hints": [
+            "Use the \"list\" command",
+            "Type `ls` into the terminal",
+            "Make sure you are in the `freeCodeCamp` folder first",
+            "Enter `cd ~/project/freeCodeCamp` to get to the `freeCodeCamp` folder if you aren't there"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "110",
+      "title": "More",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "110.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "309dd5a2a5df08bbb74ec8072f8cece1c0c423ca"
+            ]
+          },
+          "content": "There's the `test` folder you were just in. You can see what's in a file with `more <filename>`. Use it to view what's in the `package.json` file.",
+          "hints": [
+            "Type `more package.json` into the terminal",
+            "Press enter until you have seen the whole file",
+            "Make sure you are in the `freeCodeCamp` folder first",
+            "Enter `cd ~/project/freeCodeCamp` to get to the `freeCodeCamp` folder if you aren't there"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "120",
+      "title": "Clear",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "120.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "40dbe48c2f9455c5417f7c39d604b1b10e6783b1"
+            ]
+          },
+          "content": "It looks like a JSON object. You can empty the terminal with `clear`. The terminal looks a little cluttered, why don't you clear it.",
+          "hints": [
+            "Commands are case sensitive",
+            "Enter `clear` into the terminal"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "130",
+      "title": "List",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "130.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "c4f6c323069f5b65b1c4c9d51ff6587500fabf6d"
+            ]
+          },
+          "content": "Now you have a fresh screen :smile: List what's in here again.",
+          "hints": [
+            "Use the \"list\" command",
+            "Enter `ls` into the terminal",
+            "Make sure you are in the `freeCodeCamp` folder first",
+            "Enter `cd ~/project/freeCodeCamp` to get to the `freeCodeCamp` folder if you aren't there"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "140",
+      "title": "Change Directory",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "140.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "16f02ecfc62f8a799355a7ad825d12bc2e8d665a"
+            ]
+          },
+          "content": "You checked out the `test` folder and the `package.json` file. What next? Why don't you go into that `node_modules` directory.",
+          "hints": [
+            "Use the \"change directory\" command",
+            "Here's an example: `cd <folder_name>`",
+            "Enter `cd node_modules` into the terminal",
+            "Enter `cd ~/project/freeCodeCamp` to get back to the `freeCodeCamp` folder and try again"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "150",
+      "title": "List",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "150.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "166e287fad018d65bc0fb82698eaf4ff132bd8eb"
+            ]
+          },
+          "content": "Now the prompt includes `node_modules` since that's where you are. List what's in the folder.",
+          "hints": [
+            "Use the \"list\" command",
+            "Enter `ls` into the terminal",
+            "Make sure you are in the `node_modules` folder first",
+            "Enter `cd ~/project/freeCodeCamp/node_modules` to get to the `node_modules` folder if you aren't there"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "160",
+      "title": "Long List Format",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "160.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "6b244c8d0972b9d9f1214dcf2f10e27190f71bb3"
+            ]
+          },
+          "content": "That's a lot of folders. You can add a **flag** to a command to use it different ways like this: `ls <flag>`. List the contents of the `node_modules` folder in \"long list format\". Do that by adding the `-l` flag to the \"list\" command.",
+          "hints": [
+            "Use the \"list\" command",
+            "Add the `-l` flag to the command",
+            "That's a lowercase letter `l`, not the number `1`",
+            "Enter `ls -l` into the terminal",
+            "Make sure you are in the `node_modules` folder first",
+            "Enter `cd ~/project/freeCodeCamp/node_modules` to get to the `node_modules` folder if you aren't there"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "170",
+      "title": "Change Directory",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "170.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "93ff539867b270e25ad892f42ff01e8e9d7fa237"
+            ]
+          },
+          "content": "It is showing more details about each item in here and it's a little easier to read. One of the folders is named `has`, why don't you change into it.",
+          "hints": [
+            "Use the \"change directory\" command",
+            "Enter `cd has` into the terminal",
+            "Enter the command from the `node_modules` folder",
+            "Enter `cd ~/project/freeCodeCamp/node_modules` to get to the `node_modules` folder if you aren't there"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "180",
+      "title": "List",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "180.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "247398c181780fcbc89b7566cc7263424edd89ce"
+            ]
+          },
+          "content": "You are now in the `has` folder. List its contents.",
+          "hints": [
+            "Use the \"list\" command",
+            "Enter `ls` into the terminal",
+            "Enter the command from the `has` folder first",
+            "Enter `cd ~/project/freeCodeCamp/node_modules/has` to get to the `has` folder if you aren't there"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "181",
+      "title": "More",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "181.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "5bfea046c0f90e94645f068c1476776786218845"
+            ]
+          },
+          "content": "There's a few files and folders here. Can you tell the difference? Take a look at **more** of that `README.md` file.",
+          "hints": [
+            "Commands and filenames are case sensitive",
+            "Use the \"more\" command",
+            "Enter `more README.md` into the terminal",
+            "Press \"enter\" until you have seen the whole file",
+            "Make sure you are in the `has` folder first",
+            "Enter `cd ~/project/freeCodeCamp/node_modules/has` to get to the `has` folder if you aren't there"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "182",
+      "title": "List",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "182.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "f8edc3277ab69ca193861aaa8fa0d6b4e86ee754"
+            ]
+          },
+          "content": "Nothing noteworthy in there. You can't see what's in the here anymore, list the contents again.",
+          "hints": [
+            "Use the \"list\" command",
+            "Enter `ls` into the terminal",
+            "Make sure you are in the `has` folder first",
+            "Enter `cd ~/project/freeCodeCamp/node_modules/has` to get to the `has` folder if you aren't there"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "183",
+      "title": "More",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "183.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "2b8c6634de7df5aaa329983e0a29410d7b1d6419"
+            ]
+          },
+          "content": "That one file doesn't appear to have an extension. Strange. Take a look at **more** of the that \"license\" file that doesn't show an extension.",
+          "hints": [
+            "Use the \"more\" command",
+            "Enter `more LICENSE-MIT` into the terminal",
+            "Press \"enter\" until you have seen the whole file",
+            "Make sure you are in the `has` folder first",
+            "Enter `cd ~/project/freeCodeCamp/node_modules/has` to get to the `has` folder if you aren't there"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "184",
+      "title": "Clear",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "184.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "590efb888fbd605186a09ee482b08718d8490568"
+            ]
+          },
+          "content": "Pretend you read all that. It looks a little messy in here again so why don't you clear the terminal.",
+          "hints": [
+            "Use the \"clear\" command",
+            "Enter `clear` into the terminal"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "185",
+      "title": "List",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "185.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "883b54d8531d4a58304e3b5c6245c2dba690c4e3"
+            ]
+          },
+          "content": "Better. Remind yourself what's in here with the list command.",
+          "hints": [
+            "Use the \"list\" command",
+            "Enter `ls` into the terminal",
+            "Make sure you are in the `has` folder first",
+            "Enter `cd ~/project/freeCodeCamp/node_modules/has` to get to the `has` folder if you aren't there"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "190",
+      "title": "Change Directory",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "190.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "d654fbfd0202d14ac6ff635e47ac5d5c722d406a"
+            ]
+          },
+          "content": "Go into that `src` directory to see what you can find in there.",
+          "hints": [
+            "Use the \"change directory\" command",
+            "Enter `cd src` into the terminal",
+            "Make sure you are in the `has` folder first",
+            "Enter `cd ~/project/freeCodeCamp/node_modules/has` to get to the `has` folder if you aren't there"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "200",
+      "title": "Print Working Directory",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "200.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "4ac242d18809eb319a3c4522c71af25fe4adf7e8"
+            ]
+          },
+          "content": "View the full path of this folder.",
+          "hints": [
+            "Use the \"print working directory\" command",
+            "Enter `pwd` into the terminal",
+            "Make sure you are in the `src` folder",
+            "Enter `cd ~/project/freeCodeCamp/node_modules/has/src` to get to the `src` folder if you aren't there"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "210",
+      "title": "List",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "210.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "65e8701c33f25caaa16e276afdbdf35f2513eeb4"
+            ]
+          },
+          "content": "Getting deeper still. You can see that each new folder has a `/` in front of it. Take a look at what's in this folder.",
+          "hints": [
+            "Use the \"list\" command",
+            "Enter `ls` into the terminal",
+            "Make sure you are in the `src` folder first",
+            "Enter `cd ~/project/freeCodeCamp/node_modules/has/src` to get to the `src` folder if you aren't there"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "220",
+      "title": "More",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "220.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "5d317fc933f66107ffd7531689e1a742d99c9400"
+            ]
+          },
+          "content": "Only one file here. Show me what's in it with `more`.",
+          "hints": [
+            "Use the `more` command",
+            "Here's and example: `more filename`",
+            "Enter `more index.js` into the terminal",
+            "Press enter until you've seen all the content",
+            "Make sure you are in the `src` folder first",
+            "Enter `cd ~/project/freeCodeCamp/node_modules/has/src` to get to the `src` folder if you aren't there"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "230",
+      "title": "Change Directory",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "230.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "9467bfb237c3e4e3e503bafc20019459963cc884"
+            ]
+          },
+          "content": "It's some JavaScript :smile: I think you've fooled around enough. Why don't you navigate out of here. Change back to the `has` directory.",
+          "hints": [
+            "Use the \"change directory\" command",
+            "Add `..` after `cd` to go back a folder",
+            "Type `cd ..` into the terminal",
+            "Make sure you are in the `src` folder first",
+            "Enter `cd ~/project/freeCodeCamp/node_modules/has/src` to get to the `src` folder if you aren't there"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "240",
+      "title": "Change Directory",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "240.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "83371866aa09a947181cd389b2e4ce0df27b8e04"
+            ]
+          },
+          "content": "You're getting pretty good. Change back to the `node_modules` directory.",
+          "hints": [
+            "Use the same `cd` command as the last lesson",
+            "You can press the up arrow to cycle through previous commands",
+            "Type `cd ..` into the terminal",
+            "Make sure you are in the `has` folder first",
+            "Enter `cd ~/project/freeCodeCamp/node_modules/has` to get to the `has` folder if you aren't there"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "250",
+      "title": "Change Directory",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "250.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "a07c56783dc5988127ccc5a3f1fc4cdef6ca5e2b"
+            ]
+          },
+          "content": "You can go back two folders with `cd ../..`. Each set of dots represents another folder level. Go back to the `project` directory from the `node_modules` directory.",
+          "hints": [
+            "Be sure to go back two folders with one command",
+            "Type `cd ../..` into the terminal from the `node_modules` folder",
+            "Make sure you go from `node_modules` to `project`",
+            "Enter `cd ~/project/freeCodeCamp/node_modules` to get to the `node_modules` folder if you aren't there"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "260",
+      "title": "List",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "260.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "88c08f2c725812203c57d51f3b350d70507df84f"
+            ]
+          },
+          "content": "You are back in the `project` folder where you started. List what's in here again.",
+          "hints": [
+            "Use the \"list\" command",
+            "Enter `ls` into the terminal",
+            "Make sure you are in the `project` folder first",
+            "Enter `cd ~/project` to get to the `project` folder if you aren't there"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "270",
+      "title": "Clear",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "270.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "4da14a75482c1c6b4035d61399832556c413979d"
+            ]
+          },
+          "content": "That's right. Why don't you get a fresh start by clearing the terminal.",
+          "hints": [
+            "Use the \"clear\" command",
+            "Enter `clear` into the terminal"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "280",
+      "title": "Make Directory",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "280.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "732cbb646c96610f0d3c5e96ae58263ab7b57f44"
+            ]
+          },
+          "content": "You will be making a website boilerplate. You can make a new folder with `mkdir <folder_name>`. `mkdir` stands for \"make directory\". Make a `website` directory in this `project` folder. Remember that \"directory\" and \"folder\" mean the same thing.",
+          "hints": [
+            "Enter `mkdir website` into the terminal",
+            "Make sure to make it in the `project` folder",
+            "Don't try to create it with a different method",
+            "Make sure you are in the `project` folder first",
+            "Enter `cd ~/project` to get to the `project` folder if you aren't there"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "285",
+      "title": "List",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "285.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "d9f928488832aeba9dd946d2e17af18ddd781f14"
+            ]
+          },
+          "content": "List what's here to make sure it got created.",
+          "hints": [
+            "Use the \"list\" command",
+            "Enter `ls` into the terminal",
+            "Make sure you are in the `project` folder first",
+            "Enter `cd ~/project` to get to the `project` folder if you aren't there",
+            "If you used the reset button, you may need to enter the above command to get to the correct folder even if it looks like you're already there"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "290",
+      "title": "Change Directory",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "290.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "67c865f81b81b5b95836a219a889d36907c08131"
+            ]
+          },
+          "content": "It worked. The website files will be in the new directory. Change to the `website` directory so you can start creating them.",
+          "hints": [
+            "Use the \"change directory\" command",
+            "Enter `cd website` into the terminal",
+            "Enter the command from the `project` folder",
+            "Enter `cd ~/project` to get to the `project` folder if you aren't there",
+            "If you used the reset button, you may need to enter the above command to get to the correct folder even if it looks like you're already there"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "300",
+      "title": "List",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "300.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "e72ac240b35be46e0c2c84794e8ac9a1c20cbbba"
+            ]
+          },
+          "content": "List the contents of the `website` folder.",
+          "hints": [
+            "Use the \"list\" command",
+            "Enter `ls` into the terminal",
+            "Make sure you are in the `website` folder first",
+            "Enter `cd ~/project/website` to get to the `website` folder if you aren't there",
+            "If you used the reset button, you may need to enter the above command to get to the correct folder even if it looks like you're already there"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "310",
+      "title": "Echo",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "310.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "a2035a4f1e904ac53f43ea1b69bf20f11703ef99"
+            ]
+          },
+          "content": "It's brand new, there's nothing in it yet. The `echo` command lets you print anything to the terminal. You used it in the first lesson. Just type what you want to print after it. Use it to print `hello website` to the terminal.",
+          "hints": [
+            "Here's an example: `echo <text_here>`",
+            "Capitalization matters",
+            "Enter `echo hello website` into the terminal",
+            "Make sure you are in the `website` folder first",
+            "Enter `cd ~/project/website` to get to the `website` folder if you aren't there",
+            "If you used the reset button, you may need to enter the above command to get to the correct folder even if it looks like you're already there"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "320",
+      "title": "Touch",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "320.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "cb29e736be329c0d6bf4f0ebc7429114b865aac8"
+            ]
+          },
+          "content": "Websites usually have an `index.html` file. You can use `touch <filename>` to create a new file. Create `index.html` in the `website` folder.",
+          "hints": [
+            "Be sure to include the filename and extension",
+            "Don't try to create the file with another method",
+            "Capitalization matters",
+            "Enter `touch index.html` into the terminal",
+            "Make sure you are in the `website` folder first",
+            "Enter `cd ~/project/website` to get to the `website` folder if you aren't there",
+            "If you used the reset button, you may need to enter the above command to get to the correct folder even if it looks like you're already there"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "330",
+      "title": "Touch",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "330.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "b0867976e035e0258bb1ecfd36740201795b8f70"
+            ]
+          },
+          "content": "They usually have a CSS file as well. Create `styles.css` in the `website` folder using the same method.",
+          "hints": [
+            "Use the \"touch\" command",
+            "Here's an example: `touch <filename>`",
+            "Don't try to create the file with another method",
+            "Enter `touch styles.css` in the terminal",
+            "Make sure you are in the `website` folder first",
+            "Enter `cd ~/project/website` to get to the `website` folder if you aren't there",
+            "If you used the reset button, you may need to enter the above command to get to the correct folder even if it looks like you're already there"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "340",
+      "title": "List",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "340.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "ad91113b3ee921a826e8a217eaef340fe4aa0ead"
+            ]
+          },
+          "content": "List the contents of the `website` folder to make sure they got created.",
+          "hints": [
+            "Use the `list` command",
+            "Enter `ls` in the terminal",
+            "Make sure you are in the `website` folder first",
+            "Enter `cd ~/project/website` to get to the `website` folder if you aren't there",
+            "If you used the reset button, you may need to enter the above command to get to the correct folder even if it looks like you're already there"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "350",
+      "title": "Touch",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "350.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "e300db19e3776fac6f860f717e7070455af64cf8"
+            ]
+          },
+          "content": "There they are. Next is a JavaScript file. Create `index.js` in the `website` folder with the method you have been using.",
+          "hints": [
+            "Use the \"touch\" command",
+            "Here's an example: `touch <filename>`",
+            "Don't try to create the file with another method",
+            "Enter `touch index.js` in the terminal",
+            "Make sure you are in the `website` folder first",
+            "Enter `cd ~/project/website` to get to the `website` folder if you aren't there",
+            "If you used the reset button, you may need to enter the above command to get to the correct folder even if it looks like you're already there"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "360",
+      "title": "Touch",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "360.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "21216d3cd08c0ed45bfebcc767f4f0da657ab5cf"
+            ]
+          },
+          "content": "You might turn this into a git repository. Create `.gitignore` in the `website` folder with the same method.",
+          "hints": [
+            "Use the \"touch\" command",
+            "Here's an example: `touch <filename>`",
+            "Don't try to create the file with another method",
+            "Enter `touch .gitignore` in the terminal",
+            "Make sure you are in the `website` folder first",
+            "Enter `cd ~/project/website` to get to the `website` folder if you aren't there",
+            "If you used the reset button, you may need to enter the above command to get to the correct folder even if it looks like you're already there"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "370",
+      "title": "List",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "370.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "9f64ac4c75fbfa57c1d7095b92ee6494fcdb80e4"
+            ]
+          },
+          "content": "List the contents of the `website` folder to see your new files.",
+          "hints": [
+            "Use the `list` command",
+            "Make sure you are in the `website` folder",
+            "Enter `ls` in the terminal",
+            "Enter `cd ~/project/website` to get to the `website` folder if you aren't there",
+            "If you used the reset button, you may need to enter the above command to get to the correct folder even if it looks like you're already there"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "380",
+      "title": "Help",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "380.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "431b36ea592a190a5a2668df1ddecc874f355e2a"
+            ]
+          },
+          "content": "There's three files, but where's the `.gitignore` file? I think it's hidden. Most commands have a `--help` flag to show what the command can do. Display the \"help\" menu for the `ls` command. Here's an example: `command <flag>`",
+          "hints": [
+            "Use the `list` command with the \"help\" flag",
+            "You previously used: `ls -l`",
+            "Enter `ls --help` in the terminal",
+            "Make sure you are in the `website` folder first",
+            "Enter `cd ~/project/website` to get to the `website` folder if you aren't there",
+            "If you used the reset button, you may need to enter the above command to get to the correct folder even if it looks like you're already there"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "390",
+      "title": "List All",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "390.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "e622f2172ae6201b310f5f1b842efad953cc9b85"
+            ]
+          },
+          "content": "Scroll through the menu to see the flags that go with `ls`. The flag you are looking for is `--all`, or `-a` for short. List **all** the contents of the `website` folder using the correct flag.",
+          "hints": [
+            "Use the `list` command with the \"all\" flag",
+            "Here's an exmple: `command <flag>`",
+            "Enter `ls -a` in the terminal",
+            "Make sure you are in the `website` folder first",
+            "Enter `cd ~/project/website` to get to the `website` folder if you aren't there",
+            "If you used the reset button, you may need to enter the above command to get to the correct folder even if it looks like you're already there"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "400",
+      "title": "Change Directory",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "400.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "57353f2cf1c0fa57f9e58c43cb40437b55e492f5"
+            ]
+          },
+          "content": "There's the hidden file. Do you see it? It didn't display before. It also includes `.` and `..`. You used `cd ..` to go back a folder earlier. Change to the `.` directory.",
+          "hints": [
+            "Use the \"change directory\" command",
+            "Enter `cd .` in the terminal",
+            "Make sure you are in the `website` folder first",
+            "Enter `cd ~/project/website` to get to the `website` folder if you aren't there",
+            "If you used the reset button, you may need to enter the above command to get to the correct folder even if it looks like you're already there"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "410",
+      "title": "Touch",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "410.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "06e97688d802ed0577e2c3aad7fcb1ea4b28225c"
+            ]
+          },
+          "content": "You didn't go anywhere. The `.` takes you to the folder you are in, and `..` takes you back, or up, a folder. Websites need some images. Create `background.jpg` in the `website` folder.",
+          "hints": [
+            "Use the \"touch\" command",
+            "Here's an example: `touch <filename>`",
+            "Don't try to create the file with another method",
+            "Enter `touch background.jpg` in the terminal",
+            "Make sure you are in the `website` folder first",
+            "Enter `cd ~/project/website` to get to the `website` folder if you aren't there",
+            "If you used the reset button, you may need to enter the above command to get to the correct folder even if it looks like you're already there"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "420",
+      "title": "Touch",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "420.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "0a42e99d96291795f796642a4b40d0a77ff5f56d"
+            ]
+          },
+          "content": "Next, add a header image. Create `header.png` in the `website` folder.",
+          "hints": [
+            "Use the \"touch\" command",
+            "Here's an example: `touch <filename>`",
+            "Don't try to create the file with another method",
+            "Enter `touch header.png` in the terminal",
+            "Make sure you are in the `website` folder first",
+            "Enter `cd ~/project/website` to get to the `website` folder if you aren't there",
+            "If you used the reset button, you may need to enter the above command to get to the correct folder even if it looks like you're already there"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "430",
+      "title": "Touch",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "430.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "4e9339b8a64e1529e9337d2d341f4938aa0bd96a"
+            ]
+          },
+          "content": "Finally, create `footer.jpeg` in the `website` folder.",
+          "hints": [
+            "Use the \"touch\" command",
+            "Here's an example: `touch <filename>`",
+            "Don't try to create the file with another method",
+            "Enter `touch footer.jpeg` in the terminal",
+            "Make sure you are in the `website` folder first",
+            "Enter `cd ~/project/website` to get to the `website` folder if you aren't there",
+            "If you used the reset button, you may need to enter the above command to get to the correct folder even if it looks like you're already there"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "440",
+      "title": "List",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "440.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "c9745c28ce92b6aeae014570d7349663a49e714a"
+            ]
+          },
+          "content": "Use the **list** command to check out the images you just added.",
+          "hints": [
+            "Use the \"list\" command",
+            "Enter `ls` in the terminal",
+            "Make sure you are in the `website` folder first",
+            "Enter `cd ~/project/website` to get to the `website` folder if you aren't there",
+            "If you used the reset button, you may need to enter the above command to get to the correct folder even if it looks like you're already there"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "450",
+      "title": "Touch",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "450.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "59e4a98d34eaeb58f7e9ced95b6437dc6e2dce1d"
+            ]
+          },
+          "content": "Looks like images show up in pink. There's also three fonts to use for the website. The first one is \"roboto\". Create `roboto.font` in the `website` folder.",
+          "hints": [
+            "Use the \"touch\" command",
+            "Don't try to create the file with another method",
+            "Enter `touch roboto.font` in the terminal",
+            "Make sure you are in the `website` folder first",
+            "Enter `cd ~/project/website` to get to the `website` folder if you aren't there",
+            "If you used the reset button, you may need to enter the above command to get to the correct folder even if it looks like you're already there"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "460",
+      "title": "Touch",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "460.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "0abac31a67c969105d85fb00fb27c5faf97a78d2"
+            ]
+          },
+          "content": "The next one is \"lato\". Create `lato.font` in the `website` folder.",
+          "hints": [
+            "Use the \"touch\" command",
+            "Don't try to create the file with another method",
+            "Enter `touch lato.font` in the terminal",
+            "Make sure you are in the `website` folder first",
+            "Enter `cd ~/project/website` to get to the `website` folder if you aren't there",
+            "If you used the reset button, you may need to enter the above command to get to the correct folder even if it looks like you're already there"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "470",
+      "title": "Touch",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "470.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "6701aa87d8057ab5044fdd0e6f8f7fdc4f4bfcf8"
+            ]
+          },
+          "content": "Lastly, create `menlo.font` in the `website` folder.",
+          "hints": [
+            "Use the \"touch\" command",
+            "Don't try to create the file with another method",
+            "Enter `touch menlo.font` in the terminal",
+            "Make sure you are in the `website` folder first",
+            "Enter `cd ~/project/website` to get to the `website` folder if you aren't there",
+            "If you used the reset button, you may need to enter the above command to get to the correct folder even if it looks like you're already there"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "480",
+      "title": "List",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "480.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "08a645f7f3b77fbde26f11aa9a8fafd03cd02d39"
+            ]
+          },
+          "content": "List the contents of this folder to see your new font files.",
+          "hints": [
+            "Use the \"list\" command",
+            "Enter `ls` in the terminal",
+            "Make sure you are in the `website` folder first",
+            "Enter `cd ~/project/website` to get to the `website` folder if you aren't there",
+            "If you used the reset button, you may need to enter the above command to get to the correct folder even if it looks like you're already there"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "490",
+      "title": "Touch",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "490.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "5211139036ecc37b4d9bfdca9910ef9e6bc636e1"
+            ]
+          },
+          "content": "Your three font files are there. There's three icons for the website as well. Create `CodeAlly.svg` in the `website` folder.",
+          "hints": [
+            "Capitalization matters",
+            "Use the \"touch\" command",
+            "Don't try to create the file with another method",
+            "Enter `touch CodeAlly.svg` in the terminal",
+            "Make sure you are in the `website` folder first",
+            "Enter `cd ~/project/website` to get to the `website` folder if you aren't there",
+            "If you used the reset button, you may need to enter the above command to get to the correct folder even if it looks like you're already there"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "500",
+      "title": "Touch",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "500.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "2d884924bdad0bd8941e0da00e71af0cb0a72052"
+            ]
+          },
+          "content": "Next, create `CodeRoad.svg` in the `website` folder.",
+          "hints": [
+            "Capitalization matters",
+            "Use the \"touch\" command",
+            "Don't try to create the file with another method",
+            "Enter `touch CodeRoad.svg` in the terminal",
+            "Make sure you are in the `website` folder first",
+            "Enter `cd ~/project/website` to get to the `website` folder if you aren't there",
+            "If you used the reset button, you may need to enter the above command to get to the correct folder even if it looks like you're already there"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "510",
+      "title": "Touch",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "510.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "50138229af692f228666f8e23d07922b8939142c"
+            ]
+          },
+          "content": "Finally, create `freeCodeCamp.svg` in the `website` folder.",
+          "hints": [
+            "Capitalization matters",
+            "Use the \"touch\" command",
+            "Don't try to create the file with another method",
+            "Enter `touch freeCodeCamp.svg` in the terminal",
+            "Make sure you are in the `website` folder first",
+            "Enter `cd ~/project/website` to get to the `website` folder if you aren't there",
+            "If you used the reset button, you may need to enter the above command to get to the correct folder even if it looks like you're already there"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "520",
+      "title": "List",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "520.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "fb3bea533e6ad6e4ab4eede18a4467213df85a35"
+            ]
+          },
+          "content": "Check out the new icons you just added by listing the contents of the folder they are in.",
+          "hints": [
+            "Use the \"list\" command",
+            "Enter `ls` in the terminal",
+            "Make sure you are in the `website` folder first",
+            "Enter `cd ~/project/website` to get to the `website` folder if you aren't there",
+            "If you used the reset button, you may need to enter the above command to get to the correct folder even if it looks like you're already there"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "530",
+      "title": "Make Directory",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "530.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "0b6953e306db2ce19d099f90bf685fb1ec7a4fea"
+            ]
+          },
+          "content": "The icons are pink as well. I think the images should go in a separate folder to clean it up a little. Make an `images` directory in the `website` folder to put them in.",
+          "hints": [
+            "Use the \"make directory\" command",
+            "It's the `mkdir` command",
+            "Add the folder name after the command",
+            "Here's an example: `mkdir <folder_name>`",
+            "Enter `mkdir images` into the terminal",
+            "Make sure you are in the `website` folder first",
+            "Enter `cd ~/project/website` to get to the `website` folder if you aren't there",
+            "If you used the reset button, you may need to enter the above command to get to the correct folder even if it looks like you're already there"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "540",
+      "title": "List",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "540.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "c2dad543986d241e27e35adf502470d212abc54e"
+            ]
+          },
+          "content": "List the contents of the `website` folder to make sure your new folder is there.",
+          "hints": [
+            "Use the \"list\" command",
+            "Enter `ls` in the terminal",
+            "Make sure you are in the `website` folder first",
+            "Enter `cd ~/project/website` to get to the `website` folder if you aren't there",
+            "If you used the reset button, you may need to enter the above command to get to the correct folder even if it looks like you're already there"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "550",
+      "title": "Copy",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "550.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "1f59c258e8d887fb214fbaa29d6c86517d84ddf3"
+            ]
+          },
+          "content": "There's your new `images` folder. It's blue. You can copy a file with `cp <file> <destination>`. `cp` stands for \"copy\". Copy `background.jpg` to your `images` folder.",
+          "hints": [
+            "Enter `cp background.jpg images` into the terminal",
+            "Don't try to use a different method to copy it",
+            "Make sure you are in the `website` folder first",
+            "Enter `cd ~/project/website` to get to the `website` folder if you aren't there",
+            "If you used the reset button, you may need to enter the above command to get to the correct folder even if it looks like you're already there"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "560",
+      "title": "Change Directory",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "560.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "a65c73414e438862a799df20205e9e5778b45843"
+            ]
+          },
+          "content": "Better make sure it worked. Change to the `images` directory.",
+          "hints": [
+            "Use the \"change directory\" command",
+            "Enter `cd images` in the terminal",
+            "Make sure you are in the `website` folder first",
+            "Enter `cd ~/project/website` to get to the `website` folder if you aren't there",
+            "If you used the reset button, you may need to enter the above command to get to the correct folder even if it looks like you're already there"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "570",
+      "title": "List",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "570.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "38c436167cb1f65820091fb8502c329cbc0849fb"
+            ]
+          },
+          "content": "List the contents to see if `background.jpg` is here.",
+          "hints": [
+            "Use the \"list\" command",
+            "Make sure you are in the `images` folder",
+            "Enter `ls` in the terminal",
+            "Make sure you are in the `images` folder first",
+            "Enter `cd ~/project/website/images` to get to the `images` folder if you aren't there",
+            "If you used the reset button, you may need to enter the above command to get to the correct folder even if it looks like you're already there"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "580",
+      "title": "Change Directory",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "580.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "272bcd21a096bb44927ba84f7925b782ade41dc6"
+            ]
+          },
+          "content": "There it is. Looks like the copy worked. Change back to the `website` directory so you can copy the other ones.",
+          "hints": [
+            "Use the \"change directory\" command",
+            "Add `..` to the command to go back a folder",
+            "Enter `cd ..` in the terminal",
+            "Make sure you are in the `images` folder first",
+            "Enter `cd ~/project/website/images` to get to the `images` folder if you aren't there",
+            "If you used the reset button, you may need to enter the above command to get to the correct folder even if it looks like you're already there"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "585",
+      "title": "List",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "585.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "17c17072f45e6f08a34d98000127705b5fccb453"
+            ]
+          },
+          "content": "Remind yourself of the files here by listing the contents.",
+          "hints": [
+            "Use the \"list\" command",
+            "Enter `ls` in the terminal",
+            "Make sure you are in the `website` folder first",
+            "Enter `cd ~/project/website` to get to the `website` folder if you aren't there",
+            "If you used the reset button, you may need to enter the above command to get to the correct folder even if it looks like you're already there"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "590",
+      "title": "Remove",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "590.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "f89f38b6c0b82281f3a20484a315ec4285b6e656"
+            ]
+          },
+          "content": "You copied the background image to the `images` folder so you don't need the one here anymore. You can remove a file with `rm <filename>`. Remove `background.jpg` from the `website` folder.",
+          "hints": [
+            "Enter `rm background.jpg` in the terminal",
+            "Make sure you are in the `website` folder first",
+            "Enter `cd ~/project/website` to get to the `website` folder if you aren't there",
+            "If you used the reset button, you may need to enter the above command to get to the correct folder even if it looks like you're already there"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "600",
+      "title": "List",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "600.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "ee58bbf5789776c66faedac054c201f9edfb97cf"
+            ]
+          },
+          "content": "List the contents to make sure it's gone.",
+          "hints": [
+            "Use the \"list\" command",
+            "Enter `ls` in the terminal",
+            "Make sure you are in the `website` folder first",
+            "Enter `cd ~/project/website` to get to the `website` folder if you aren't there",
+            "If you used the reset button, you may need to enter the above command to get to the correct folder even if it looks like you're already there"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "610",
+      "title": "Copy",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "610.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "bf1f4f242eaec4ec28f2dc997898dc205a670018"
+            ]
+          },
+          "content": "Okay, it's gone. Next, copy `header.png` to the `images` folder.",
+          "hints": [
+            "Here's the example again: `cp <file> <destination>`",
+            "You previously used `cp background.jpg images`",
+            "Don't try to use a different method to copy it",
+            "Enter `cp header.png images`",
+            "Make sure you are in the `website` folder first",
+            "Enter `cd ~/project/website` to get to the `website` folder if you aren't there",
+            "If you used the reset button, you may need to enter the above command to get to the correct folder even if it looks like you're already there"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "620",
+      "title": "Copy",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "620.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "5f03d01c5218f664001c94d0826c9e096a16d051"
+            ]
+          },
+          "content": "Last, copy the \"footer\" image to the `images` folder.",
+          "hints": [
+            "Here's the example again: `cp <file> <destination>`",
+            "You previously used `cp header.png images`",
+            "Don't try to use a different method to copy it",
+            "Enter `cp footer.jpeg images`",
+            "Make sure you are in the `website` folder first",
+            "Enter `cd ~/project/website` to get to the `website` folder if you aren't there",
+            "If you used the reset button, you may need to enter the above command to get to the correct folder even if it looks like you're already there"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "630",
+      "title": "Change Directory",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "630.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "a5bcf3bede85ceb739b3de2d939f4b6639e04647"
+            ]
+          },
+          "content": "All the images should be copied over. Change to the `images` directory so you can make sure.",
+          "hints": [
+            "Use the \"change directory\" command",
+            "Add the path of where you want to go to the command",
+            "Enter `cd images` in the terminal",
+            "Make sure you are in the `website` folder first",
+            "Enter `cd ~/project/website` to get to the `website` folder if you aren't there",
+            "If you used the reset button, you may need to enter the above command to get to the correct folder even if it looks like you're already there"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "640",
+      "title": "List",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "640.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "4b4f5b901c2b3a1cb7f970cd1e387489aa7727b0"
+            ]
+          },
+          "content": "Check if the images are here by listing the contents.",
+          "hints": [
+            "Use the \"list\" command",
+            "Enter `ls` in the terminal",
+            "Make sure you are in the `images` folder first",
+            "Enter `cd ~/project/website/images` to get to the `images` folder if you aren't there",
+            "If you used the reset button, you may need to enter the above command to get to the correct folder even if it looks like you're already there"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "650",
+      "title": "Change Directory",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "650.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "166715ed84bcec6b62c4a3744011e2e7e6580d3b"
+            ]
+          },
+          "content": "They all made it here. Go back to the `website` folder so you can delete the original files.",
+          "hints": [
+            "Use the \"change directory\" command",
+            "Add `..` to the command to go back a folder",
+            "Enter `cd ..` in the terminal",
+            "Make sure you are in the `images` folder first",
+            "Enter `cd ~/project/website/images` to get to the `images` folder if you aren't there",
+            "If you used the reset button, you may need to enter the above command to get to the correct folder even if it looks like you're already there"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "660",
+      "title": "List",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "660.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "0b6ce5161278fc0fd3b9ab030e980d3d7628fec6"
+            ]
+          },
+          "content": "List the contents to remind yourself of the filenames to delete.",
+          "hints": [
+            "Use the \"list\" command",
+            "Enter `ls` in the terminal",
+            "Make sure you are in the `website` folder first",
+            "Enter `cd ~/project/website` to get to the `website` folder if you aren't there",
+            "If you used the reset button, you may need to enter the above command to get to the correct folder even if it looks like you're already there"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "670",
+      "title": "Remove",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "670.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "d790217b44cf524cd0b34e0d1424cd181183cc20"
+            ]
+          },
+          "content": "There's two that you don't need anymore. Remove the \"header\" image file from the `website` folder since you copied to the images folder.",
+          "hints": [
+            "Use the \"remove\" command",
+            "Here's an example: `rm <filename>`",
+            "You previously used `rm background.jpg`",
+            "It's the `header.png` file",
+            "Enter `rm header.png` in the terminal",
+            "Don't try to use a different method to delete the file",
+            "Make sure you are in the `website` folder first",
+            "Enter `cd ~/project/website` to get to the `website` folder if you aren't there",
+            "If you used the reset button, you may need to enter the above command to get to the correct folder even if it looks like you're already there"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "680",
+      "title": "Remove",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "680.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "76d936b3aaea894b18dd4ab4aeac6e4b2a8d5a25"
+            ]
+          },
+          "content": "It should be gone. Remove the \"footer\" image from the `website` folder as well.",
+          "hints": [
+            "Use the \"remove\" command",
+            "You previously used `rm header.png`",
+            "The file to remove is `footer.jpg`",
+            "Don't try to use a different method to delete the file",
+            "Enter `rm footer.jpeg` in the terminal",
+            "Make sure you are in the `website` folder first",
+            "Enter `cd ~/project/website` to get to the `website` folder if you aren't there",
+            "If you used the reset button, you may need to enter the above command to get to the correct folder even if it looks like you're already there"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "690",
+      "title": "List",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "690.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "9292ede641b05b36c9a5fe73ea3b9941e8989430"
+            ]
+          },
+          "content": "List the contents of the `website` folder to check if they are gone.",
+          "hints": [
+            "Use the \"list\" command",
+            "Enter `ls` in the terminal",
+            "Make sure you are in the `website` folder first",
+            "Enter `cd ~/project/website` to get to the `website` folder if you aren't there",
+            "If you used the reset button, you may need to enter the above command to get to the correct folder even if it looks like you're already there"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "700",
+      "title": "Rename",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "700.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "3909b7258b6a03dd1e5ded0c72e284102caa681c"
+            ]
+          },
+          "content": "Looks like they're all deleted. There was a mistake with the extensions for the font files. You can rename them with `mv` like this: `mv <filename> <new_filename>`. `mv` stands for \"move\", it can **rename or move** something. Rename `roboto.font` to `roboto.woff`.",
+          "hints": [
+            "Enter `mv roboto.font roboto.woff`",
+            "Don't try to rename it with other methods",
+            "Make sure you are in the `website` folder first",
+            "Enter `cd ~/project/website` to get to the `website` folder if you aren't there",
+            "If you used the reset button, you may need to enter the above command to get to the correct folder even if it looks like you're already there"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "710",
+      "title": "List",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "710.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "398f0a6f97fe11e4260aa0958d48ce923ef5f947"
+            ]
+          },
+          "content": "Use \"list\" to check if it worked.",
+          "hints": [
+            "Use the \"list\" command",
+            "Enter `ls` in the terminal",
+            "Make sure you are in the `website` folder first",
+            "Enter `cd ~/project/website` to get to the `website` folder if you aren't there",
+            "If you used the reset button, you may need to enter the above command to get to the correct folder even if it looks like you're already there"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "720",
+      "title": "Rename",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "720.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "de6faac0e777be9be0e56c1f194224d56addd62d"
+            ]
+          },
+          "content": "Do you see the \"roboto\" font? The rename worked. Next, rename the \"lato\" font file to `lato.ttf`.",
+          "hints": [
+            "Use the \"move\" command to rename a file",
+            "Here's the example: `mv <filename> <new_filename>`",
+            "You previously used: `mv roboto.font roboto.woff`",
+            "It's the `lato.font` file",
+            "Don't try to rename it with other methods",
+            "Enter `mv lato.font lato.ttf`",
+            "Make sure you are in the `website` folder first",
+            "Enter `cd ~/project/website` to get to the `website` folder if you aren't there",
+            "If you used the reset button, you may need to enter the above command to get to the correct folder even if it looks like you're already there"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "730",
+      "title": "Rename",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "730.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "8b0974a8994f93771f643821ed7d7d8062ce98fb"
+            ]
+          },
+          "content": "Lastly, rename the \"menlo\" font to `menlo.otf`.",
+          "hints": [
+            "Use the \"move\" command to rename a file",
+            "Here's the example: `mv <filename> <new_filename>`",
+            "You previously used: `mv lato.font lato.ttf`",
+            "It's the `menlo.font` file",
+            "Don't try to rename it with other methods",
+            "Enter `mv menlo.font menlo.otf`",
+            "Make sure you are in the `website` folder first",
+            "Enter `cd ~/project/website` to get to the `website` folder if you aren't there",
+            "If you used the reset button, you may need to enter the above command to get to the correct folder even if it looks like you're already there"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "740",
+      "title": "List",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "740.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "18f9f561349db2ef86e8286e98c32878d0562070"
+            ]
+          },
+          "content": "Use the \"list\" command to make sure those last two got renamed.",
+          "hints": [
+            "Use the \"list\" command",
+            "Enter `ls` in the terminal",
+            "Make sure you are in the `website` folder first",
+            "Enter `cd ~/project/website` to get to the `website` folder if you aren't there",
+            "If you used the reset button, you may need to enter the above command to get to the correct folder even if it looks like you're already there"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "750",
+      "title": "Make Directory",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "750.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "9a2a43002d7b992507c84bea21d98cc0de65fee0"
+            ]
+          },
+          "content": "Take a look at the files to make sure they got renamed. Those font files could be organized into a folder as well. Make a `fonts` directory in the `website` folder to put them in.",
+          "hints": [
+            "Use the \"make directory\" command",
+            "It's the `mkdir` command",
+            "Here's an example: `mkdir <directory_name>`",
+            "Don't try to create the folder with another method",
+            "Enter `mkdir fonts` into the terminal",
+            "Make sure you are in the `website` folder first",
+            "Enter `cd ~/project/website` to get to the `website` folder if you aren't there",
+            "If you used the reset button, you may need to enter the above command to get to the correct folder even if it looks like you're already there"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "755",
+      "title": "List",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "755.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "2c4ac74030b48458591393afa3e00fe72503bd71"
+            ]
+          },
+          "content": "List the contents of the `website` folder to make sure your new folder is there.",
+          "hints": [
+            "Use the \"list\" command",
+            "Enter `ls` in the terminal",
+            "Make sure you are in the `website` folder first",
+            "Enter `cd ~/project/website` to get to the `website` folder if you aren't there",
+            "If you used the reset button, you may need to enter the above command to get to the correct folder even if it looks like you're already there"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "760",
+      "title": "Move",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "760.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "66015f4bdd1c055af0e3c73f966a00e77d3a1523"
+            ]
+          },
+          "content": "See it? You renamed the font files with `mv`, you can also move files with it. Move the \"roboto\" font to the new `fonts` folder. Here's an example: `mv <file> <destination>`.",
+          "hints": [
+            "Use the \"move\" command",
+            "The file to move is `roboto.woff`",
+            "Don't try to move the file with another method",
+            "Enter `mv roboto.woff fonts`",
+            "Make sure you are in the `website` folder first",
+            "Enter `cd ~/project/website` to get to the `website` folder if you aren't there",
+            "If you used the reset button, you may need to enter the above command to get to the correct folder even if it looks like you're already there"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "770",
+      "title": "Find",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "770.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "fff0c0a2ae6a3c4a1f0bebfee9f460715cbb36ac"
+            ]
+          },
+          "content": "You can use `find` to find things or view a file tree. Enter `find` to view the file tree of the `website` folder to see all the files and folders withing it.",
+          "hints": [
+            "Use the \"find\" command",
+            "Make sure you are in the `website` folder",
+            "Enter `find` in the terminal",
+            "Make sure you are in the `website` folder first",
+            "Enter `cd ~/project/website` to get to the `website` folder if you aren't there",
+            "If you used the reset button, you may need to enter the above command to get to the correct folder even if it looks like you're already there"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "780",
+      "title": "Move",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "780.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "d10c29703cbee9d19fb217c0b5088746ad41ca6a"
+            ]
+          },
+          "content": "You can see everything in this `website` folder and its descendant folders. Notice that they all start with `./` to represent this folder. You can see that your font moved to the `fonts` folder. Next, move the \"lato\" font to the `fonts` folder.",
+          "hints": [
+            "Use the \"move\" command",
+            "Here's an example: `mv <file> <destination>`",
+            "The file to move is `lato.ttf`",
+            "You previously used: `mv roboto.woff fonts`",
+            "Don't try to move the file with another method",
+            "Enter `mv lato.ttf fonts`",
+            "Make sure you are in the `website` folder first",
+            "Enter `cd ~/project/website` to get to the `website` folder if you aren't there",
+            "If you used the reset button, you may need to enter the above command to get to the correct folder even if it looks like you're already there"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "790",
+      "title": "Move",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "790.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "5fa1e1f0cd3ba750a31420bb1fff679c4e829600"
+            ]
+          },
+          "content": "There's one more font to move. Move the \"menlo\" font to the `fonts` folder.",
+          "hints": [
+            "Use the \"move\" command",
+            "Here's an example: `mv <file> <destination>`",
+            "The file to move is `menlo.otf`",
+            "You previously used: `mv lato.ttf fonts`",
+            "Don't try to move the file with another method",
+            "Enter `mv menlo.otf fonts`",
+            "Make sure you are in the `website` folder first",
+            "Enter `cd ~/project/website` to get to the `website` folder if you aren't there",
+            "If you used the reset button, you may need to enter the above command to get to the correct folder even if it looks like you're already there"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "800",
+      "title": "Find",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "800.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "de95a4e9324dad05934a3aa0b56337282f626a8d"
+            ]
+          },
+          "content": "Use `find` again to list the whole file tree and make sure those two got moved.",
+          "hints": [
+            "Use the \"find\" command",
+            "Enter `find` in the terminal",
+            "Make sure you are in the `website` folder first",
+            "Enter `cd ~/project/website` to get to the `website` folder if you aren't there",
+            "If you used the reset button, you may need to enter the above command to get to the correct folder even if it looks like you're already there"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "850",
+      "title": "Make Directory",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "850.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "a080602c973ce9727630ab1dee0ee5e5628d99cf"
+            ]
+          },
+          "content": "Yes, you can see them all in the `fonts` folder. Let's organize some more. Make a `client` directory in the `website` folder for the client side files.",
+          "hints": [
+            "Use the \"make directory\" command",
+            "Here's an example: `mkdir <directory_name>`",
+            "Enter `mkdir client` in the terminal",
+            "Make sure you are in the `website` folder first",
+            "Enter `cd ~/project/website` to get to the `website` folder if you aren't there",
+            "If you used the reset button, you may need to enter the above command to get to the correct folder even if it looks like you're already there"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "860",
+      "title": "Make Directory",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "860.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "97794abfc4b88034987f5428be95756a395740fd"
+            ]
+          },
+          "content": "You can make a folder in that `client` folder from here by adding it to the path like this: `mkdir client/<new_folder_name>`. Make a `src` directory in the `client` folder from here.",
+          "hints": [
+            "Use the \"make directory\" command",
+            "Enter `mkdir client/src` from the `website` folder",
+            "Don't try to create the folder with another method",
+            "Make sure you are in the `website` folder first",
+            "Enter `cd ~/project/website` to get to the `website` folder if you aren't there",
+            "If you used the reset button, you may need to enter the above command to get to the correct folder even if it looks like you're already there"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "870",
+      "title": "Move",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "870.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "3addf593932de8f6a1531c8232bb68d5bcb4f002"
+            ]
+          },
+          "content": "You can move files all the way across the system from here with the right path. Move `index.html` to the `client/src` folder from here.",
+          "hints": [
+            "Use the \"move\" command",
+            "You previously used: `mv menlo.otf fonts`",
+            "Enter `mv index.html client/src` from the `website` folder",
+            "Make sure you are in the `website` folder first",
+            "Enter `cd ~/project/website` to get to the `website` folder if you aren't there",
+            "If you used the reset button, you may need to enter the above command to get to the correct folder even if it looks like you're already there"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "880",
+      "title": "Find",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "880.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "17ccef21195d9d525a4e8b7c5eaaa121d886dde4"
+            ]
+          },
+          "content": "Use `find` to view the file tree and make sure it moved.",
+          "hints": [
+            "Use the \"find\" command",
+            "Enter `find` in the terminal",
+            "Make sure you are in the `website` folder",
+            "Enter `cd ~/project/website` to get to the `website` folder if you aren't there",
+            "If you used the reset button, you may need to enter the above command to get to the correct folder even if it looks like you're already there"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "890",
+      "title": "Move",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "890.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "aa39c61a07a321228d03403c237b6b75ed6f9035"
+            ]
+          },
+          "content": "Can you see the `index.html` file in your new `src` folder? Looks like it moved :smile: There's some more files that can go in the `src` folder. Move `index.js` to it from here.",
+          "hints": [
+            "Use the \"move\" command",
+            "You previously used: `mv index.html client/src`",
+            "Enter `mv index.js client/src` from the `website` folder",
+            "Enter `cd ~/project/website` to get to the `website` folder if you aren't there",
+            "If you used the reset button, you may need to enter the above command to get to the correct folder even if it looks like you're already there"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "900",
+      "title": "Move",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "900.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "14d7b2654753a10ca491fa801a1183d1307e4468"
+            ]
+          },
+          "content": "Last is the CSS file. Move `styles.css` to the `src` folder.",
+          "hints": [
+            "Use the \"move\" command",
+            "Don't try to move the file with another method",
+            "You've used `mv index.js client/src` to move a file",
+            "Enter `mv styles.css client/src` from the `website` folder",
+            "Enter `cd ~/project/website` to get to the `website` folder if you aren't there",
+            "If you used the reset button, you may need to enter the above command to get to the correct folder even if it looks like you're already there"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "910",
+      "title": "Find",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "910.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "958ffd620ece86d9e5e48914e30faac468b2822a"
+            ]
+          },
+          "content": "Seems like you can do anything right from here. Take another look at the tree with `find`.",
+          "hints": [
+            "Use the \"find\" command",
+            "Enter `find` in the terminal",
+            "Make sure you are in the `website` folder first",
+            "Enter `cd ~/project/website` to get to the `website` folder if you aren't there",
+            "If you used the reset button, you may need to enter the above command to get to the correct folder even if it looks like you're already there"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "920",
+      "title": "Find Subfolder",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "920.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "229dee1e02957820c6021f7a5f3754bf1829087f"
+            ]
+          },
+          "content": "Things are looking more organized :smile: You can use `find <folder_name>` to display the tree of a different folder. View the file tree of the `client` folder from the `website` folder.",
+          "hints": [
+            "Use the \"find\" command",
+            "Add `client` at the end of the command",
+            "Enter `find client` in the terminal",
+            "Make sure you are in the `website` folder first",
+            "Enter `cd ~/project/website` to get to the `website` folder if you aren't there",
+            "If you used the reset button, you may need to enter the above command to get to the correct folder even if it looks like you're already there"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "930",
+      "title": "Find",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "930.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "78f97e1e9df9d92b0192ff4b8b11171034d0c8d7"
+            ]
+          },
+          "content": "Now you just see what's in the `client` folder. What else can `find` do? View the \"help\" menu of the `find` command to look around.",
+          "hints": [
+            "Use the \"find\" command with the \"help\" flag",
+            "The help flag is: `--help`",
+            "You previously used `ls --help`",
+            "Enter `find --help` in the terminal",
+            "Make sure you are in the `website` folder first",
+            "Enter `cd ~/project/website` to get to the `website` folder if you aren't there",
+            "If you used the reset button, you may need to enter the above command to get to the correct folder even if it looks like you're already there"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "940",
+      "title": "Find",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "940.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "b789dc2e50d16c14a4e6f3956156cabb63b5d619"
+            ]
+          },
+          "content": "The menu isn't very pretty, but there's a `-name` flag in there. You can use it to search for something with `find -name <filename>`. Use `find` with the `-name` flag to search for `index.html`.",
+          "hints": [
+            "Enter `find -name index.html` in the terminal",
+            "Make sure you are in the `website` folder first",
+            "Enter `cd ~/project/website` to get to the `website` folder if you aren't there",
+            "If you used the reset button, you may need to enter the above command to get to the correct folder even if it looks like you're already there"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "950",
+      "title": "Find",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "950.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "e9d0c3bee19c567e47bcff82be3cc6db63bc8ddf"
+            ]
+          },
+          "content": "It shows you where that file is. Using the same command, find where the `styles.css` file is.",
+          "hints": [
+            "Use the \"find\" command with the \"name\" flag and the filename",
+            "The name flag is: `-name`",
+            "You previously used `find -name index.html`",
+            "Enter `find -name style.css` in the terminal",
+            "Make sure you are in the `website` folder first",
+            "Enter `cd ~/project/website` to get to the `website` folder if you aren't there",
+            "If you used the reset button, you may need to enter the above command to get to the correct folder even if it looks like you're already there"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "960",
+      "title": "Find",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "960.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "1043ad56a5e757c47089b0652201b4a2c7dd9eea"
+            ]
+          },
+          "content": "You can search for folders with it, as well. Using the same command and flag, find the `src` folder.",
+          "hints": [
+            "Use the \"find\" command with the \"name\" flag",
+            "The name flag is: `-name`",
+            "You previously used `find -name index.html`",
+            "Enter `find -name src` in the terminal",
+            "Make sure you are in the `website` folder first",
+            "Enter `cd ~/project/website` to get to the `website` folder if you aren't there",
+            "If you used the reset button, you may need to enter the above command to get to the correct folder even if it looks like you're already there"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "970",
+      "title": "Find",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "970.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "720454fa5cc92e2537c816b6009bc306a273437b"
+            ]
+          },
+          "content": ":smile: View the file tree of the `website` folder to see what else you need to do.",
+          "hints": [
+            "Use the \"find\" command",
+            "Don't use any flags this time",
+            "Enter `find` in the terminal",
+            "Make sure you are in the `website` folder first",
+            "Enter `cd ~/project/website` to get to the `website` folder if you aren't there",
+            "If you used the reset button, you may need to enter the above command to get to the correct folder even if it looks like you're already there"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "980",
+      "title": "Change Directory",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "980.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "7cd2f1d5f4737ce57d15e983c6b18369ebdf24a8"
+            ]
+          },
+          "content": "What's next? More organizing! You should put all the assets in one spot. Change into the `client` folder.",
+          "hints": [
+            "Use the \"change directory\" command",
+            "Enter `cd client` in the terminal",
+            "Make sure you are in the `website` folder first",
+            "Enter `cd ~/project/website` to get to the `website` folder if you aren't there",
+            "If you used the reset button, you may need to enter the above command to get to the correct folder even if it looks like you're already there"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "990",
+      "title": "Make Directory",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "990.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "bc258f67c9a86ab66efdb2c49e6f0832acf16b25"
+            ]
+          },
+          "content": "Make a new directory named `assets` in the `client` folder.",
+          "hints": [
+            "Use the \"make directory\" command",
+            "It's the `mkdir` command",
+            "Here's an example: `mkdir <directory_name>`",
+            "You previously used `mkdir client`",
+            "Enter `mkdir assets` in the terminal",
+            "Make sure you are in the `client` folder first",
+            "Enter `cd ~/project/website/client` to get to the `client` folder if you aren't there",
+            "If you used the reset button, you may need to enter the above command to get to the correct folder even if it looks like you're already there"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1000",
+      "title": "Change Directory",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "1000.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "acdf29e86fdf41a747933ae4ddd6f9c700505955"
+            ]
+          },
+          "content": "Change into the new `assets` folder.",
+          "hints": [
+            "Use the \"change directory\" command",
+            "It's the `cd` command",
+            "Enter `cd assets` in the terminal",
+            "Make sure you are in the `client` folder first",
+            "Enter `cd ~/project/website/client` to get to the `client` folder if you aren't there",
+            "If you used the reset button, you may need to enter the above command to get to the correct folder even if it looks like you're already there"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1010",
+      "title": "Make Directory",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "1010.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "6ef8c434f3526f4e365efe2a0fabbc5032a4689a"
+            ]
+          },
+          "content": "All the images and other assets can go here. Make an `images` directory in the `assets` folder for all the images.",
+          "hints": [
+            "Use the \"make directory\" command",
+            "It's the `mkdir` command",
+            "You previously used `mkdir assets`",
+            "Enter `mkdir images` in the terminal",
+            "Make sure you are in the `assets` folder first",
+            "Enter `cd ~/project/website/client/assets` to get to the `assets` folder if you aren't there",
+            "If you used the reset button, you may need to enter the above command to get to the correct folder even if it looks like you're already there"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1020",
+      "title": "Change Directory",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "1020.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "a9a4a5509fd69ce899ec08716385cc68af05867d"
+            ]
+          },
+          "content": "Go to your new `images` folder.",
+          "hints": [
+            "Use the \"change directory\" command",
+            "It's the `cd` command",
+            "Enter `cd images` in the terminal",
+            "Make sure you are in the `assets` folder first",
+            "Enter `cd ~/project/website/client/assets` to get to the `assets` folder if you aren't there",
+            "If you used the reset button, you may need to enter the above command to get to the correct folder even if it looks like you're already there"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1030",
+      "title": "Touch",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "1030.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "2a2d962c140fbe02f4a561d7eee51e616cd7fd73"
+            ]
+          },
+          "content": "You want the images here. Create `background.jpg` in this folder.",
+          "hints": [
+            "Use the \"touch\" command",
+            "You previously used `touch freeCodeCamp.svg`",
+            "Enter `touch background.jpg` in the terminal",
+            "Make sure you are in the `images` folder first",
+            "Enter `cd ~/project/website/client/assets/images` to get to the `images` folder if you aren't there",
+            "If you used the reset button, you may need to enter the above command to get to the correct folder even if it looks like you're already there"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1040",
+      "title": "Change Directory",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "1040.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "f50a9882d2211cf05c6cafa5a6257f3a63b2e105"
+            ]
+          },
+          "content": "Wait. You don't need to recreate them. You can just move the other images here. Go back to the `website` folder from here. It's three folder back.",
+          "hints": [
+            "Use the \"change directory\" command",
+            "You went back two folders with `cd ../..`",
+            "Enter `cd ../../..` in the terminal",
+            "Make sure you are in the `images` folder first",
+            "Enter `cd ~/project/website/client/assets/images` to get to the `images` folder if you aren't there",
+            "If you used the reset button, you may need to enter the above command to get to the correct folder even if it looks like you're already there"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1050",
+      "title": "Change Directory",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "1050.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "035bc36e7c2af0020b426b8b423aef4a537c81a7"
+            ]
+          },
+          "content": "Now go to where the original images are. Change into the `images` folder.",
+          "hints": [
+            "Use the \"change directory\" command",
+            "Enter `cd images` in the terminal from the `website` folder",
+            "Enter `cd ~/project/website` to get to the `website` folder if you aren't there",
+            "If you used the reset button, you may need to enter the above command to get to the correct folder even if it looks like you're already there"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1055",
+      "title": "List",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "1055.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "f10939cbadb347f876f82df8bad79420533c8662"
+            ]
+          },
+          "content": "List the contents of the `images` folder to see the files here.",
+          "hints": [
+            "Use the \"list\" command",
+            "Enter `ls` in the terminal",
+            "Make sure you are in the `images` folder first",
+            "Enter `cd ~/project/website/images` to get to the `images` folder if you aren't there",
+            "If you used the reset button, you may need to enter the above command to get to the correct folder even if it looks like you're already there"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1060",
+      "title": "Move",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "1060.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "28512c5d75018abe763872ae96ae08ca91fece9c"
+            ]
+          },
+          "content": "Umm, first I think you should move them back to the website folder. Move `header.png` back to the `website` folder. The destination for the file is `..`",
+          "hints": [
+            "Use the \"move\" command",
+            "Here's an example: `mv <file> <destination>`",
+            "Don't try to move the file with another method",
+            "Enter `mv header.png ..` in the terminal",
+            "Make sure you are in the `images` folder first",
+            "Enter `cd ~/project/website/images` to get to the `images` folder if you aren't there",
+            "If you used the reset button, you may need to enter the above command to get to the correct folder even if it looks like you're already there"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1065",
+      "title": "List",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "1065.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "41efe58b77fa302334590599ea1981bc7f291079"
+            ]
+          },
+          "content": "List the contents of the `images` folder to see if it's gone.",
+          "hints": [
+            "Use the \"list\" command",
+            "Enter `ls` in the terminal",
+            "Make sure you are in the `images` folder first",
+            "Enter `cd ~/project/website/images` to get to the `images` folder if you aren't there",
+            "If you used the reset button, you may need to enter the above command to get to the correct folder even if it looks like you're already there"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1070",
+      "title": "Change Directory",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "1070.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "8200c73ffe411c1cd36bd729df9a54bff7a631f1"
+            ]
+          },
+          "content": "It's gone. Go back to the `website` folder.",
+          "hints": [
+            "Use the \"change directory\" command",
+            "Enter `cd ..` in the terminal from the `images` folder",
+            "Make sure you are in the `images` folder first",
+            "Enter `cd ~/project/website/images` to get to the `images` folder if you aren't there",
+            "If you used the reset button, you may need to enter the above command to get to the correct folder even if it looks like you're already there"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1080",
+      "title": "List",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "1080.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "e0b3106e219a4cd630aefc5ed06a03c86062f09b"
+            ]
+          },
+          "content": "List what's here.",
+          "hints": [
+            "Use the \"list\" command",
+            "Enter `ls` in the terminal",
+            "Make sure you are in the `website` folder first",
+            "Enter `cd ~/project/website` to get to the `website` folder if you aren't there",
+            "If you used the reset button, you may need to enter the above command to get to the correct folder even if it looks like you're already there"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1090",
+      "title": "Find",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "1090.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "b711971d54ad67121e2ce133b5d83cc870d18afb"
+            ]
+          },
+          "content": "There's the file you just moved. Next, you will move it to the `client/assets/images` folder. First, use `find` with the correct flag to search for `images`.",
+          "hints": [
+            "Use the \"find\" command with the \"name\" flag",
+            "The name flag is: `-name`",
+            "Here's an example `find -name <folder>`",
+            "You previously used `find -name src`",
+            "Enter `find -name images` in the terminal",
+            "Make sure you are in the `website` folder first",
+            "Enter `cd ~/project/website` to get to the `website` folder if you aren't there",
+            "If you used the reset button, you may need to enter the above command to get to the correct folder even if it looks like you're already there"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1100",
+      "title": "Move",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "1100.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "d613922c25579a112ec9bfd83cc64cdc66ad2619"
+            ]
+          },
+          "content": "There's your two image folders. Move `header.png` to the one with the longer path. Just use it as the destination to do so.",
+          "hints": [
+            "Use the \"move\" command",
+            "Here's an example: `mv <file> <destination>`",
+            "The destination you want is `client/assets/images`",
+            "Don't try to move the file with another method",
+            "Enter `mv header.png client/assets/images` in the terminal",
+            "Make sure you are in the `website` folder first",
+            "Enter `cd ~/project/website` to get to the `website` folder if you aren't there",
+            "If you used the reset button, you may need to enter the above command to get to the correct folder even if it looks like you're already there"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1110",
+      "title": "Find",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "1110.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "418ea5b6f68dade4075f38601f7757c4d9be71f2"
+            ]
+          },
+          "content": "Use `find` to search for your `header.png` file and make sure it moved.",
+          "hints": [
+            "Don't forget the correct flag",
+            "You want the \"name\" flag",
+            "The name flag is: `-name`",
+            "You previously used `find -name images`",
+            "Enter `find -name header.png` in the terminal",
+            "Make sure you are in the `website` folder first",
+            "Enter `cd ~/project/website` to get to the `website` folder if you aren't there",
+            "If you used the reset button, you may need to enter the above command to get to the correct folder even if it looks like you're already there"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1120",
+      "title": "Find",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "1120.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "f3a999600ada77edd3a7d6e079091321eaf8bdf9"
+            ]
+          },
+          "content": "There it is. Right where you put it. Next, search for your `footer.jpeg` file so you can move that over there.",
+          "hints": [
+            "Use the \"find\" command with the \"name\" flag",
+            "The name flag is: `-name`",
+            "You previously used `find -name header.png`",
+            "Enter `find -name footer.jpeg` in the terminal",
+            "Make sure you are in the `website` folder first",
+            "Enter `cd ~/project/website` to get to the `website` folder if you aren't there",
+            "If you used the reset button, you may need to enter the above command to get to the correct folder even if it looks like you're already there"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1130",
+      "title": "Move",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "1130.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "51b1c7d1226a88535522e027ad70104c4d374ed3"
+            ]
+          },
+          "content": "It's in the original `images` folder. You can **use that path** with the move command to move it. Move `footer.jpeg` to the `client/assets/images` folder while in the `website` folder.",
+          "hints": [
+            "Use the \"move\" command",
+            "You previously used `mv header.png client/assets/images`",
+            "Make sure you put in the correct two paths",
+            "The first path is `images/footer.jpeg`",
+            "The second path is `client/assets/images`",
+            "Enter `mv images/footer.jpeg client/assets/images` in the terminal",
+            "Make sure you are in the `website` folder first",
+            "Enter `cd ~/project/website` to get to the `website` folder if you aren't there",
+            "If you used the reset button, you may need to enter the above command to get to the correct folder even if it looks like you're already there"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1135",
+      "title": "Find",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "1135.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "76827c6bf43d9fbb60c33e77e2ce4960540e985b"
+            ]
+          },
+          "content": "View the file tree of this folder to make sure all your images are over in their new folder. Don't use any flags.",
+          "hints": [
+            "Use the \"find\" command",
+            "Enter `find` in the terminal",
+            "Make sure you are in the `website` folder first",
+            "Enter `cd ~/project/website` to get to the `website` folder if you aren't there",
+            "If you used the reset button, you may need to enter the above command to get to the correct folder even if it looks like you're already there"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1150",
+      "title": "Remove Directory",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "1150.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "8f5e162950c324a55f2b481b2294309beeb7ee71"
+            ]
+          },
+          "content": "You don't need the old `images` folder anymore. You can use `rmdir <directory_name>` to remove a folder. `rmdir` stands for \"remove directory\". Try to remove the `images` folder with `rmdir`. Make sure it's the one in the `website` folder.",
+          "hints": [
+            "Enter `rmdir images` into the terminal",
+            "Make sure you are in the `website` folder first",
+            "Enter `cd ~/project/website` to get to the `website` folder if you aren't there",
+            "If you used the reset button, you may need to enter the above command to get to the correct folder even if it looks like you're already there"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1170",
+      "title": "Remove",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "1170.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "0be9f9f22ffabb53cb84513739bad4b3f09d8496"
+            ]
+          },
+          "content": "Directory not empty? Oh yeah, there's still the background image in there. Remove the background image file in the `images` folder from here. Make sure it's the one in the `website/images` folder.",
+          "hints": [
+            "Use the `rm` command",
+            "Here's an example: `rm <file_path>`",
+            "The file path you want is `images/background.jpg`",
+            "Enter `rm images/background.jpg` in the terminal",
+            "Make sure you are in the `website` folder first",
+            "Enter `cd ~/project/website` to get to the `website` folder if you aren't there",
+            "If you used the reset button, you may need to enter the above command to get to the correct folder even if it looks like you're already there"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1190",
+      "title": "Remove Directory",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "1190.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "46901fd19ad1d3e148f072080e0ca122d31abdfe"
+            ]
+          },
+          "content": "Try to remove the `images` folder again with `rmdir`. Make sure it's the one in the `website` folder.",
+          "hints": [
+            "Use the \"remove directory\" command",
+            "Enter `rmdir images` in the terminal",
+            "Make sure you are in the `website` folder first",
+            "Enter `cd ~/project/website` to get to the `website` folder if you aren't there",
+            "If you used the reset button, you may need to enter the above command to get to the correct folder even if it looks like you're already there"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1195",
+      "title": "List",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "1195.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "e49c862be82f7d6f6210eba76b88df7576f06422"
+            ]
+          },
+          "content": "I think it worked this time. List the contents to find out.",
+          "hints": [
+            "Use the \"list\" command",
+            "Enter `ls` in the terminal",
+            "Make sure you are in the `website` folder first",
+            "Enter `cd ~/project/website` to get to the `website` folder if you aren't there",
+            "If you used the reset button, you may need to enter the above command to get to the correct folder even if it looks like you're already there"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1200",
+      "title": "Make Directory",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "1200.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "79df19c25ce9b2ece23c6ef687d6efb9ea648c7a"
+            ]
+          },
+          "content": "It worked, the `images` folder is gone. Make a new `icons` folder in your `assets` folder while in the `website` folder.",
+          "hints": [
+            "Use the `mkdir` command",
+            "Your `assets` folder is in the `client` folder",
+            "Don't try to create the directory with another method",
+            "Enter `mkdir client/assets/icons` into the terminal",
+            "Make sure you are in the `website` folder first",
+            "Enter `cd ~/project/website` to get to the `website` folder if you aren't there",
+            "If you used the reset button, you may need to enter the above command to get to the correct folder even if it looks like you're already there"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1210",
+      "title": "Move",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "1210.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "80d0255cfb5d06f265ebd2508e682ab0d4bf6f1b"
+            ]
+          },
+          "content": "Move the `CodeAlly.svg` file to your new `icons` folder.",
+          "hints": [
+            "Use the \"move\" command",
+            "Here's a tip: `mv CodeAlly.svg <path_to_icons_folder>`",
+            "The destination path is `client/assets/icons`",
+            "Enter `mv CodeAlly.svg client/assets/icons` into the terminal",
+            "Make sure you are in the `website` folder first",
+            "Enter `cd ~/project/website` to get to the `website` folder if you aren't there",
+            "If you used the reset button, you may need to enter the above command to get to the correct folder even if it looks like you're already there"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1215",
+      "title": "Find",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "1215.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "296f8e8f7bd7fc808986591dc32613d5c03d84b9"
+            ]
+          },
+          "content": "View the file tree of the `website` folder and make sure it moved.",
+          "hints": [
+            "Use the \"find\" command",
+            "Enter `find` in the terminal",
+            "Make sure you are in the `website` folder first",
+            "Enter `cd ~/project/website` to get to the `website` folder if you aren't there",
+            "If you used the reset button, you may need to enter the above command to get to the correct folder even if it looks like you're already there"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1220",
+      "title": "Move",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "1220.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "46ea1d54d9266a33229d0aa0be33cc90dd8d6eb5"
+            ]
+          },
+          "content": "Verify that the file moved to the `icons` folder. Next, move the \"CodeRoad\" file to your `icons` folder.",
+          "hints": [
+            "Use the \"move\" command",
+            "The filename is `CodeRoad.svg`",
+            "Here's a tip: `mv CodeRoad.svg <path_to_icons_folder>`",
+            "Enter `mv CodeRoad.svg client/assets/icons` into the terminal",
+            "Make sure you are in the `website` folder first",
+            "Enter `cd ~/project/website` to get to the `website` folder if you aren't there",
+            "If you used the reset button, you may need to enter the above command to get to the correct folder even if it looks like you're already there"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1230",
+      "title": "Move",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "1230.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "4383562c4276a02cd8a59e91a299367ec3c5e148"
+            ]
+          },
+          "content": "Lastly, move the \"freeCodeCamp\" file to your `icons` folder.",
+          "hints": [
+            "Use the \"move\" command",
+            "Here's a tip: `mv freeCodeCamp.svg <path_to_icons_folder>`",
+            "The path is `client/assets/icons`",
+            "Enter `mv freeCodeCamp.svg client/assets/icons` into the terminal",
+            "Make sure you are in the `website` folder first",
+            "Enter `cd ~/project/website` to get to the `website` folder if you aren't there",
+            "If you used the reset button, you may need to enter the above command to get to the correct folder even if it looks like you're already there"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1240",
+      "title": "Find",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "1240.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "fc77e1ae9edc995a4a5b9d9c7beecab359567600"
+            ]
+          },
+          "content": "View the file tree and make sure the files moved.",
+          "hints": [
+            "Use the \"find\" command",
+            "Enter `find` in the terminal",
+            "Make sure you are in the `website` folder first",
+            "Enter `cd ~/project/website` to get to the `website` folder if you aren't there",
+            "If you used the reset button, you may need to enter the above command to get to the correct folder even if it looks like you're already there"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1250",
+      "title": "Make Directory",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "1250.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "7c08edad194c386ab3b68e6ec16615f1ad3fc448"
+            ]
+          },
+          "content": "This looks much better. The three icons are now in the `icons` folder. Make a `fonts` folder in your `assets` folder from here for all the font files.",
+          "hints": [
+            "Use the `mkdir` command",
+            "Put the `fonts` folder in the `client/assets` folder",
+            "Enter `mkdir client/assets/fonts` in the terminal",
+            "Make sure you are in the `website` folder first",
+            "Enter `cd ~/project/website` to get to the `website` folder if you aren't there",
+            "If you used the reset button, you may need to enter the above command to get to the correct folder even if it looks like you're already there"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1260",
+      "title": "Touch",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "1260.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "0d9e4595065f984e12b18f0f51b1ea0f4da5df1e"
+            ]
+          },
+          "content": "Turns out you want some different fonts for the website. From here, create `roboto-bold.woff` in your new `fonts` folder. You can put the path in front of the filename of where you want it to go.",
+          "hints": [
+            "Use the \"touch\" command",
+            "Here's an example: `touch <path/filename>`",
+            "The file needs to be created in the `client/assets/fonts` folder",
+            "Enter `touch client/assets/fonts/roboto-bold.woff` in the terminal",
+            "Make sure you are in the `website` folder first",
+            "Enter `cd ~/project/website` to get to the `website` folder if you aren't there",
+            "If you used the reset button, you may need to enter the above command to get to the correct folder even if it looks like you're already there"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1270",
+      "title": "Touch",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "1270.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "b371723bf1741056afe8fb362a5533050ef60bf5"
+            ]
+          },
+          "content": "Next, create `roboto-light.woff` in your new `fonts` folder from here.",
+          "hints": [
+            "Use the \"touch\" command",
+            "Here's an example: `touch <path/filename>`",
+            "Put the file in the `client/assets/fonts` folder",
+            "You previously used: `touch client/assets/fonts/roboto-bold.woff`",
+            "Enter `touch client/assets/fonts/roboto-light.woff` in the terminal",
+            "Make sure you are in the `website` folder first",
+            "Enter `cd ~/project/website` to get to the `website` folder if you aren't there",
+            "If you used the reset button, you may need to enter the above command to get to the correct folder even if it looks like you're already there"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1275",
+      "title": "Find",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "1275.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "aa20f30e8b03872c3c087fdee6bc80c576059bb7"
+            ]
+          },
+          "content": "View the file tree of the `client/assets/fonts` folder from here to see if your new files are there.",
+          "hints": [
+            "Use the \"find\" command with the folder path you want to see",
+            "Here's an example: `find <path_to_folder>`",
+            "Enter `find client/assets/fonts` in the terminal",
+            "Make sure you are in the `website` folder first",
+            "Enter `cd ~/project/website` to get to the `website` folder if you aren't there",
+            "If you used the reset button, you may need to enter the above command to get to the correct folder even if it looks like you're already there"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1280",
+      "title": "Touch",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "1280.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "67f0e456b41b5ce74de975d97c3379593d0092d9"
+            ]
+          },
+          "content": "Two more fonts to go. Create `lato-bold.ttf` in the new `fonts` folder from here.",
+          "hints": [
+            "Use the \"touch\" command",
+            "Here's an example: `touch <path/filename>`",
+            "Put the file in the `client/assets/fonts` folder",
+            "You previously used: `touch client/assets/fonts/roboto-light.woff`",
+            "Enter `touch client/assets/fonts/lato-bold.ttf` in the terminal",
+            "Make sure you are in the `website` folder first",
+            "Enter `cd ~/project/website` to get to the `website` folder if you aren't there",
+            "If you used the reset button, you may need to enter the above command to get to the correct folder even if it looks like you're already there"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1290",
+      "title": "Touch",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "1290.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "52e886f6fef5ef83b5f0fa8567dd1211e5f0917d"
+            ]
+          },
+          "content": "Lastly, create `lato-light.ttf` in your new `fonts` folder from here.",
+          "hints": [
+            "Use the \"touch\" command",
+            "Here's an example: `touch <path/filename>`",
+            "You previously used: `touch client/assets/fonts/lato-bold.ttf`",
+            "Enter `touch client/assets/fonts/lato-light.ttf` in the terminal",
+            "Make sure you are in the `website` folder first",
+            "Enter `cd ~/project/website` to get to the `website` folder if you aren't there",
+            "If you used the reset button, you may need to enter the above command to get to the correct folder even if it looks like you're already there"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1300",
+      "title": "Find",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "1300.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "628408bd4aa4323a7d90225480017dbf5e67c8f1"
+            ]
+          },
+          "content": "View your file tree and make sure the files are there.",
+          "hints": [
+            "Use the \"find\" command",
+            "Enter `find` in the terminal",
+            "Make sure you are in the `website` folder first",
+            "Enter `cd ~/project/website` to get to the `website` folder if you aren't there",
+            "If you used the reset button, you may need to enter the above command to get to the correct folder even if it looks like you're already there"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1310",
+      "title": "Remove Help",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "1310.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "4be7302cce9bbcf972c58cb211337ccd67d9167f"
+            ]
+          },
+          "content": "Things are looking more organized :smile: The new fonts are there. Now you can remove the old `fonts` folder and everything in it. You can't do that with `rmdir` since it's not empty. View the \"help\" menu of the `rm` command to see if you can find anything.",
+          "hints": [
+            "Use the \"remove\" command with the \"help\" flag",
+            "The \"help\" flag is `--help`",
+            "Enter `rm --help` into the terminal",
+            "Make sure you are in the `website` folder first",
+            "Enter `cd ~/project/website` to get to the `website` folder if you aren't there",
+            "If you used the reset button, you may need to enter the above command to get to the correct folder even if it looks like you're already there"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1315",
+      "title": "Remove Recursively",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "1315.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "2666c3fdce9aa86ed7facc7f08aabc5c11c2bc95"
+            ]
+          },
+          "content": "There's a `-r` flag that says, `remove directories and their contents recursively`. That will remove the folder and everything in it. Use the \"remove\" command with that flag to remove the `fonts` folder. Make sure it's the one in the `website` folder. Be careful not to remove the wrong folder.",
+          "hints": [
+            "The \"remove\" command is `rm`",
+            "The flag you want is `-r`",
+            "Here's an example: `rm -r <folder>`",
+            "Enter `rm -r fonts` in the terminal",
+            "Make sure you are in the `website` folder first",
+            "Enter `cd ~/project/website` to get to the `website` folder if you aren't there"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1320",
+      "title": "List",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "1320.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "5fa93588dc48362447bd368983fac9b5f1794d0a"
+            ]
+          },
+          "content": "List what's here to see if it's gone.",
+          "hints": [
+            "Use the \"list\" command",
+            "Enter `ls` in the terminal",
+            "Make sure you are in the `website` folder first",
+            "Enter `cd ~/project/website` to get to the `website` folder if you aren't there",
+            "If you used the reset button, you may need to enter the above command to get to the correct folder even if it looks like you're already there"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1330",
+      "title": "Touch",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "1330.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "f88ca3920073ffa58f2600f555eb72ffd898bc5a"
+            ]
+          },
+          "content": "Looks like it’s gone. Surely, it went to the trash can right? No, it’s just gone. You should **be very careful when recursively removing files** like that. It will delete everything, and can destroy your operating system. There's a few more files for the boilerplate. Create `package.json` in the `website` folder.",
+          "hints": [
+            "Use the \"touch\" command",
+            "Enter `touch package.json` in the terminal",
+            "Make sure you are in the `website` folder first",
+            "Enter `cd ~/project/website` to get to the `website` folder if you aren't there",
+            "If you used the reset button, you may need to enter the above command to get to the correct folder even if it looks like you're already there"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1340",
+      "title": "Touch",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "1340.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "da2204f6aef3ac5eb6d72fd1cda467aa92e381ae"
+            ]
+          },
+          "content": "Next, create `server.js` in the `website` folder.",
+          "hints": [
+            "Use the \"touch\" command",
+            "Enter `touch server.js` in the terminal",
+            "Make sure you are in the `website` folder first",
+            "Enter `cd ~/project/website` to get to the `website` folder if you aren't there",
+            "If you used the reset button, you may need to enter the above command to get to the correct folder even if it looks like you're already there"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1350",
+      "title": "Touch",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "1350.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "4cb3f41693fe67da1457b6cf363d340eed00487a"
+            ]
+          },
+          "content": "Lastly, create `README.md` in the `website` folder.",
+          "hints": [
+            "Use the \"touch\" command",
+            "Capitalization matters",
+            "Enter `touch README.md` in the terminal",
+            "Make sure you are in the `website` folder first",
+            "Enter `cd ~/project/website` to get to the `website` folder if you aren't there",
+            "If you used the reset button, you may need to enter the above command to get to the correct folder even if it looks like you're already there"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1360",
+      "title": "List",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "1360.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "708218b6158bb8402953572be84042793aba7703"
+            ]
+          },
+          "content": "List the content of this folder to make sure your new files are there.",
+          "hints": [
+            "Use the \"list\" command",
+            "Enter `ls` in the terminal",
+            "Make sure you are in the `website` folder first",
+            "Enter `cd ~/project/website` to get to the `website` folder if you aren't there",
+            "If you used the reset button, you may need to enter the above command to get to the correct folder even if it looks like you're already there"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1370",
+      "title": "Echo",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "1370.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "0f09b426461714dbb1ff925d25e33fbdcaabe03b"
+            ]
+          },
+          "content": "The boilerplate is complete. Use `echo` to print `Yay!` to the terminal.",
+          "hints": [
+            "Use the \"echo\" command",
+            "Here's an example: `echo <text>`",
+            "Enter `echo Yay!` in the terminal",
+            "Make sure you are in the `website` folder first",
+            "Enter `cd ~/project/website` to get to the `website` folder if you aren't there",
+            "If you used the reset button, you may need to enter the above command to get to the correct folder even if it looks like you're already there"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1380",
+      "title": "Echo",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "1380.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "2d8b4b449cdf797780b46eaf4c924c228d8957cf"
+            ]
+          },
+          "content": "Print `I finished the boilerplate!` to the terminal.",
+          "hints": [
+            "Use the \"echo\" command",
+            "Enter `echo I finished the boilerplate!` in the terminal",
+            "Make sure you are in the `website` folder first",
+            "Enter `cd ~/project/website` to get to the `website` folder if you aren't there",
+            "If you used the reset button, you may need to enter the above command to get to the correct folder even if it looks like you're already there"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1390",
+      "title": "Echo",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "1390.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "c59888539b87a1738fb8af25b08ae2717a31f630"
+            ]
+          },
+          "content": "Print `one more thing...` to the terminal",
+          "hints": [
+            "Use the \"echo\" command",
+            "Enter `echo one more thing...` in the terminal",
+            "Make sure you are in the `website` folder first",
+            "Enter `cd ~/project/website` to get to the `website` folder if you aren't there",
+            "If you used the reset button, you may need to enter the above command to get to the correct folder even if it looks like you're already there"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1400",
+      "title": "Echo to File",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "1400.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "b717c1de3ecd6ec11ad1a5a22fdf644b9c3f7842"
+            ]
+          },
+          "content": "You can print to a file instead of the terminal with `echo text >> filename`. Use it to print `I made this boilerplate` to your `README.md` file.",
+          "hints": [
+            "Use the \"echo\" command",
+            "Enter `echo I made this boilerplate >> README.md` in the terminal",
+            "Make sure you are in the `website` folder first",
+            "Enter `cd ~/project/website` to get to the `website` folder if you aren't there",
+            "If you used the reset button, you may need to enter the above command to get to the correct folder even if it looks like you're already there"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1405",
+      "title": "More",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "1405.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "542e2d0b05686a95ffeef0d11460c804fd2d6f25"
+            ]
+          },
+          "content": "Use `more` to view your `README.md` file.",
+          "hints": [
+            "Use the \"more\" command",
+            "Enter `more README.md` in the terminal",
+            "Make sure you are in the `website` folder first",
+            "Enter `cd ~/project/website` to get to the `website` folder if you aren't there",
+            "If you used the reset button, you may need to enter the above command to get to the correct folder even if it looks like you're already there"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1410",
+      "title": "Echo to File",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "1410.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "4de374135df57b0a5723a1af74070c7ef898d987"
+            ]
+          },
+          "content": "Now that line is in the file. Add `from the command line` to your `README.md` file with the `echo` command and the same method.",
+          "hints": [
+            "Use the \"echo\" command with `>>` to add text to a file",
+            "Here's an example: `echo <text> >> <filename>`",
+            "You previously used: `echo I made this boilerplate >> README.md`",
+            "Enter `echo from the command line >> README.md` in the terminal",
+            "Make sure you are in the `website` folder first",
+            "Enter `cd ~/project/website` to get to the `website` folder if you aren't there",
+            "If you used the reset button, you may need to enter the above command to get to the correct folder even if it looks like you're already there"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1415",
+      "title": "More",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "1415.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "cfd0f14b4f8fecbde4a15672d7347cb51c3b039a"
+            ]
+          },
+          "content": "Use `more` to view the \"readme\" file again.",
+          "hints": [
+            "Use the \"more\" command",
+            "Enter `more README.md` in the terminal",
+            "Make sure you are in the `website` folder first",
+            "Enter `cd ~/project/website` to get to the `website` folder if you aren't there",
+            "If you used the reset button, you may need to enter the above command to get to the correct folder even if it looks like you're already there"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1420",
+      "title": "Echo to File",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "1420.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "6957ec3fd75339b8facec162821a73716fd97766"
+            ]
+          },
+          "content": "Now the file has two lines. Add `for the freeCodeCamp bash lessons` to your \"readme\" file with the `echo` command like you did before.",
+          "hints": [
+            "Use the \"echo\" command with `>>` to add text to a file",
+            "Here's an example: `echo <text> >> <filename>`",
+            "You previously used: `echo from the command line >> README.md` in the terminal",
+            "Enter `echo for the freeCodeCamp bash lessons >> README.md` in the terminal",
+            "Make sure you are in the `website` folder first",
+            "Enter `cd ~/project/website` to get to the `website` folder if you aren't there",
+            "If you used the reset button, you may need to enter the above command to get to the correct folder even if it looks like you're already there"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1430",
+      "title": "More",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "1430.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "4fc20560de22fca8b0ff13f2710f00034d09235f"
+            ]
+          },
+          "content": "View your \"readme\" file again like you did before.",
+          "hints": [
+            "Use the \"more\" command",
+            "Enter `more README.md` in the terminal",
+            "Make sure you are in the `website` folder first",
+            "Enter `cd ~/project/website` to get to the `website` folder if you aren't there",
+            "If you used the reset button, you may need to enter the above command to get to the correct folder even if it looks like you're already there"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1440",
+      "title": "Change Directory",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "1440.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "7665d9e468d0e05e93213f860d79c94758b4fa63"
+            ]
+          },
+          "content": ":smile: Change to the `project` folder.",
+          "hints": [
+            "Use the \"change directory\" command",
+            "Enter `cd ..` in the terminal",
+            "Make sure you are in the `website` folder first",
+            "Enter `cd ~/project/website` to get to the `website` folder if you aren't there",
+            "If you used the reset button, you may need to enter the above command to get to the correct folder even if it looks like you're already there"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1445",
+      "title": "List",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "1445.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "9d4ea61c51565213ecec5da120e44435b89bf29a"
+            ]
+          },
+          "content": "You are back where you started. List what's here.",
+          "hints": [
+            "Use the \"list\" command",
+            "Enter `ls` in the terminal",
+            "Make sure you are in the `project` folder first",
+            "Enter `cd ~/project` to get to the `project` folder if you aren't there",
+            "If you used the reset button, you may need to enter the above command to get to the correct folder even if it looks like you're already there"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1450",
+      "title": "Rename",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "1450.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "1b04160cdaf98ad746298917f25052324768d4fa"
+            ]
+          },
+          "content": "Still the same two folders. Rename the `website` folder to `website-boilerplate`.",
+          "hints": [
+            "Use the \"move\" command",
+            "You previously used: `mv menlo.font menlo.otf` to rename a file",
+            "Here's an example: `mv <folder_name> <new_folder_name>`",
+            "Enter `mv website website-boilerplate` in the terminal",
+            "Make sure you are in the `project` folder first",
+            "Enter `cd ~/project` to get to the `project` folder if you aren't there",
+            "If you used the reset button, you may need to enter the above command to get to the correct folder even if it looks like you're already there"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1460",
+      "title": "List",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "1460.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "bb239719f8f9e1f61129bddcc2c03c2afe23ff29"
+            ]
+          },
+          "content": "List the contents of this folder to see the new name.",
+          "hints": [
+            "Use the \"list\" command",
+            "Enter `ls` in the terminal",
+            "Make sure you are in the `project` folder first",
+            "Enter `cd ~/project` to get to the `project` folder if you aren't there",
+            "If you used the reset button, you may need to enter the above command to get to the correct folder even if it looks like you're already there"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1470",
+      "title": "Copy Help",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "1470.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "0a20dafe1c0a6e17c95a2f3e5b5fc7449bf03a02"
+            ]
+          },
+          "content": "Thanks for making this. You need to make a copy of it. Take a look at the \"help\" menu of the \"copy\" command.",
+          "hints": [
+            "The \"copy\" command is `cp`",
+            "The \"help\" flag is `--help`",
+            "Enter `cp --help` in the terminal",
+            "Make sure you are in the `project` folder first",
+            "Enter `cd ~/project` to get to the `project` folder if you aren't there",
+            "If you used the reset button, you may need to enter the above command to get to the correct folder even if it looks like you're already there"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1475",
+      "title": "Copy",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "1475.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "538a3ed2257c3ef0f26bdbc058f5a04e0fc7c780"
+            ]
+          },
+          "content": "Scroll up to find that \"recursive\" flag. You need to use it again to copy the whole folder. Copy the whole boilerplate into a folder named `toms-website`.",
+          "hints": [
+            "The \"copy\" command is `cp`",
+            "The \"recursive\" flag is `-r`",
+            "Here's an example: `cp -r <folder_to_copy> <name_of_copy>`",
+            "Enter `cp -r website-boilerplate toms-website` in the terminal",
+            "Make sure you are in the `project` folder first",
+            "Enter `cd ~/project` to get to the `project` folder if you aren't there",
+            "If you used the reset button, you may need to enter the above command to get to the correct folder even if it looks like you're already there"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1480",
+      "title": "List",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "1480.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "1b7e9dddf1232f58305bb8ae13394251c6e5505e"
+            ]
+          },
+          "content": "List the contents of the `project` folder to see the new copy.",
+          "hints": [
+            "Use the \"list\" command",
+            "Enter `ls` in the terminal",
+            "Make sure you are in the `project` folder first",
+            "Enter `cd ~/project` to get to the `project` folder if you aren't there",
+            "If you used the reset button, you may need to enter the above command to get to the correct folder even if it looks like you're already there"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1490",
+      "title": "Find",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "1490.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "d1a9dbcd596efc185fff8927de67691a8119717b"
+            ]
+          },
+          "content": "Thanks. Use `find` to view the tree of `toms-website`.",
+          "hints": [
+            "Use the \"find\" command",
+            "Add the folder name to the command",
+            "Here's an example: `find <folder_name>`",
+            "It's the `toms-website` folder",
+            "Enter `find toms-website` in the terminal",
+            "Make sure you are in the `project` folder first",
+            "Enter `cd ~/project` to get to the `project` folder if you aren't there",
+            "If you used the reset button, you may need to enter the above command to get to the correct folder even if it looks like you're already there"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1500",
+      "title": "Find",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "1500.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "8bb69fdba56ee700378e3aacd79ecc02f38c269a"
+            ]
+          },
+          "content": "Use `find` to view the tree of the boilerplate folder to make sure it matches.",
+          "hints": [
+            "Use the \"find\" command",
+            "Add the folder name to the command",
+            "It's the `website-boilerplate` folder",
+            "Enter `find website-boilerplate` in the terminal",
+            "Make sure you are in the `project` folder first",
+            "Enter `cd ~/project` to get to the `project` folder if you aren't there",
+            "If you used the reset button, you may need to enter the above command to get to the correct folder even if it looks like you're already there"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1510",
+      "title": "Clear",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "1510.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "bb0550feae59920f8596e48de948ebe22fae84c1"
+            ]
+          },
+          "content": "Awesome! You are finished for now. Clear the terminal one last time.",
+          "hints": [
+            "Use the \"clear\" command",
+            "Enter `clear` into the terminal"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1520",
+      "title": "Echo",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "1520.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "9430d5c90d4460b9167ee1f12b33cb7dc8686f8d"
+            ]
+          },
+          "content": "Print \"goodbye terminal\" to the terminal.",
+          "hints": [
+            "Use the \"echo\" command",
+            "Here's an example: `echo <text>`",
+            "Enter `echo goodbye terminal` into the terminal"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1530",
+      "title": "Exit",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "1530.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "0c024e9dd0f7809cf28400928e08c9eb8a18512a"
+            ]
+          },
+          "content": "Use the \"exit\" command to exit the terminal.",
+          "hints": [
+            "Enter `exit` into the terminal",
+            "Have a nice day"
+          ]
+        }
+      ]
+    }
+  ]
+}
